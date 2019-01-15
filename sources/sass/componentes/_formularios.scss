@@ -1,0 +1,13 @@
+form{
+	input[type='text'],
+	input[type='password'],
+	input[type='date'],
+	input[type='phone'],
+	input[type='number'],
+	input[type='email']{
+		width: 100%;
+		border: none;
+		padding: 8px 15px;
+		@include montserrat;
+	}
+}

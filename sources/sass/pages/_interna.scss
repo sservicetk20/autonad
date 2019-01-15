@@ -1,0 +1,26 @@
+.ColumProduct {
+    padding: 5px;
+    border: 2px solid red;
+    &__figure {
+        padding: 1px;
+    }
+}
+.ColumnSlider {
+    border: 2px solid red;
+}
+.columInfoProduct{
+    border: 2px solid red; 
+    padding: 50px;
+        &__titulo {
+            @include montserrat-x-bold;
+	        color:$negro;
+            text-align:center;
+            font-size: 50px;
+        }
+        &__precio {
+            @include montserrat-x-bold;
+	        color:$negro;
+            text-align:left;
+            font-size: 50px;
+        }
+}

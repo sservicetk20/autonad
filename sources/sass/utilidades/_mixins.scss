@@ -1,0 +1,103 @@
+@mixin border-radius($radius...) {
+  -webkit-border-radius: $radius;
+	 -moz-border-radius: $radius;
+	  -ms-border-radius: $radius;
+		  border-radius: $radius;
+}
+
+@mixin transition ($tiempo:.5) {
+	-webkit-transition: all $tiempo+s ease-in-out;
+	-moz-transition: all $tiempo+s ease-in-out;
+	-o-transition: all $tiempo+s ease-in-out;
+	transition: all $tiempo+s ease-in-out;
+}
+
+@mixin rotate ($grados:0) {
+	-ms-transform: rotate($grados+deg); /* IE 9 */
+	-webkit-transform: rotate($grados+deg); /* Chrome, Safari, Opera */
+	transform: rotate($grados+deg);
+}
+
+
+@mixin optional-at-root($sel) {
+	@at-root #{if(not &, $sel, selector-append(&, $sel))} {
+		@content;
+	}
+}
+@mixin placeholder {
+	@include optional-at-root('::-webkit-input-placeholder') {
+		@content;
+	}
+	@include optional-at-root(':-moz-placeholder') {
+		@content;
+	}
+	@include optional-at-root('::-moz-placeholder') {
+		@content;
+	}
+	@include optional-at-root(':-ms-input-placeholder') {
+		@content;
+	}
+}
+
+@for $i from 1 through 10 {
+	/*Margins ↓↓↓*/
+	.mt#{$i}0{
+		margin-top: #{$i}0px;
+	}
+	.mb#{$i}0{
+		margin-bottom: #{$i}0px;
+	}
+	.mr#{$i}0{
+		margin-right: #{$i}0px;
+	}
+	.ml#{$i}0{
+		margin-left: #{$i}0px;
+	}
+}
+
+@mixin clear-b () {
+	&::after,&::before{
+		content: "";
+		display: table;
+		clear: both;
+		width: 100%;
+	}
+}
+.clear-b{
+	@include clear-b;
+}
+
+@mixin centrado () {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	float: none;
+}
+
+.centrado{
+	@include centrado;
+}
+.ta-c{
+	text-align: center;
+}
+.ta-r{
+	text-align: right;
+}
+.ta-l{
+	text-align: left;
+}
+.ta-j{
+	text-align: justify;
+}
+.light{
+	font-family: Sackers_L;
+	font-weight: 300;
+}
+.no_padding{
+	padding-right: 0;
+	padding-left: 0;
+}
+
+@mixin font-size ($tamano) {
+	font-size: ($tamano / $base-fuente)+rem;
+}

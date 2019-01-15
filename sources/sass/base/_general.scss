@@ -1,0 +1,11 @@
+html, body{
+	@include montserrat;
+	font-size: $base-fuente+px;
+	@media #{$media-movil}{
+		font-size: 15px;
+	}
+}
+
+strong.text_white{
+	color: $blanco;
+}

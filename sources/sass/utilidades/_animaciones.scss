@@ -1,0 +1,74 @@
+@keyframes arrow{
+	0% {
+		transform:translate(0px,0px);
+	}
+	50% {
+		transform:translate(0px,-10px);
+	}
+	100% {
+		transform:translate(0px,0px);
+	}
+}
+@-moz-keyframes arrow{
+	0% {
+		-moz-transform:translate(0px,0px);
+	}
+	50% {
+		-moz-transform:translate(0px,-10px);
+	}
+	100% {
+		-moz-transform:translate(0px,0px);
+	}
+}
+@-webkit-keyframes arrow {
+	0% {
+		-webkit-transform:translate(0px,0px);
+	}
+	50% {
+		-webkit-transform:translate(0px,-10px);
+	}
+	100% {
+		-webkit-transform:translate(0px,0px);
+	}
+}
+@-o-keyframes arrow {
+	0% {
+		-o-transform:translate(0px,0px);
+	}
+	50% {
+		-o-transform:translate(0px,-10px);
+	}
+	100% {
+		-o-transform:translate(0px,0px);
+	}
+}
+@-ms-keyframes arrow {
+	0% {
+		-ms-transform:translate(0px,0px);
+	}
+	50% {
+		-ms-transform:translate(0px,-10px);
+	}
+	100% {
+		-ms-transform:translate(0px,0px);
+	}
+}
+
+
+@mixin animacion($nombre_animacion, $tiempo) {
+	animation: $nombre_animacion linear $tiempo;
+	animation-iteration-count: infinite;
+	transform-origin: 50% 50%;
+	-webkit-animation: $nombre_animacion linear $tiempo;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-transform-origin: 50% 50%;
+	-moz-animation: $nombre_animacion linear $tiempo;
+	-moz-animation-iteration-count: infinite;
+	-moz-transform-origin: 50% 50%;
+	-o-animation: $nombre_animacion linear $tiempo;
+	-o-animation-iteration-count: infinite;
+	-o-transform-origin: 50% 50%;
+	-ms-animation: $nombre_animacion linear $tiempo;
+	-ms-animation-iteration-count: infinite;
+	-ms-transform-origin: 50% 50%;
+}

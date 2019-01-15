@@ -1,0 +1,27 @@
+.breadcrumb{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	@include flexbox;
+	a{
+		color: $negro-texto;
+		display: block;
+		@include flexbox;
+		@include transition();
+		@include font-size(14);
+		text-transform: uppercase;
+		@include montserrat-bold;
+		&.active, &:hover{
+			color: $rojo;
+		}
+		&:after{
+			content: "/";
+			margin: 0 10px;
+			@include montserrat;
+		}
+		&:last-of-type{
+			&:after{
+				display: none;
+			}
+		}
+	}
+}

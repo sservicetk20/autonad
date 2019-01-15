@@ -1,0 +1,5 @@
+.select {
+    @media #{ $media-movil }{
+        display: grid!important;
+    }
+}

@@ -1,0 +1,100 @@
+label.btn{
+	input{
+		display: none!important;
+	}
+}
+
+.gris
+{
+		//height: 50px;
+		color: $blanco;
+		@include font-size(14);
+		background-color: #9d9d9c;
+		box-shadow: 0px 10px 5px #2d2824;
+		@media #{$media-tablet}{
+			//padding: 18px 20px;
+		}
+		&:hover{
+			color: $rojo;
+			background-color: $blanco;
+		}
+	}
+
+
+.btn{
+	border: none;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	@include transition(0.3);
+	@include inline-flex;
+	@include align-items(center);
+	@include justify-content(center);
+	padding: 30px;
+	// ↓↓ Colores ↓↓ ↓↓ Colores ↓↓ ↓↓ Colores ↓↓
+	&__transparente{
+		color: $blanco;
+		border: 1px solid $blanco;
+		background-color: transparent;
+		&:hover{
+			color: $blanco;
+		}
+	}
+
+	&__menu{
+		color: $negro;
+		border: 1px solid $negro;
+		background-color: $blanco;
+		&:hover{
+			color: $blanco;
+		}
+	}
+
+	&__scrollTo{
+		width: 50px;
+		height: 50px;
+		background-size: 100% 100%;
+		background-position: center;
+		background-image: url(../img/icons/call_to_scroll.png);
+		@include animacion(arrow, 1.5s);
+	}
+	&__gris{
+		//height: 50px;
+		color: $blanco;
+		padding: 20px 80px;
+		@include font-size(14);
+		background-color: #9d9d9c;
+		box-shadow: 0px 10px 5px #2d2824;
+		@media #{$media-tablet}{
+			//padding: 18px 20px;
+		}
+		&:hover{
+			color: $rojo;
+			background-color: $blanco;
+		}
+	}
+	&__redes{
+		width: 50px;
+		height: 50px;
+		color: $blanco;
+		//border-radius: 50%;
+		@include font-size(12);
+		//background-color: $negro;
+		&--facebook{
+			//background-color: $gris;
+		}
+		&--instagram{
+			//background-color: $gris;
+		}
+		&--twitter{
+			//background-color: $gris;
+		}
+	}
+	&__shareFacebook{
+		width: 126px;
+		height: 52px;
+		background-image: url('../img/icons/icon_shareFacebook.png');
+	}
+}

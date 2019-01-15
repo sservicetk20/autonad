@@ -1,0 +1,71 @@
+body.loading{
+	.loader-wrap{
+		display: block;
+	}
+}
+.loader-wrap{
+	margin: auto;
+	overflow: hidden;
+	position: absolute;
+	background-image: url('../img/banner/fondo.png');
+	left: 0;right: 0;top: 0;bottom: 0;
+	z-index: 99999;
+	position: fixed;
+	display: none;
+}
+
+.loader-circles{
+	$loader-size: 40px;
+	$loader-color: #ffffff;
+	$loader-speed: 4;
+	position: absolute;
+	left: 0;right: 0;top: 0;bottom: 0;
+	margin: auto;
+	transform: rotate(45deg);
+	width: $loader-size*5;
+	height: $loader-size*5;
+	.circle{
+		box-sizing: border-box;
+		position: absolute;
+		top: 0;bottom: 0;right: 0;left: 0;
+		margin: auto;
+		background-color: transparent;
+		border: $loader-size/10 solid $loader-color;
+		border-radius: 50%;
+		border-bottom-color: transparent;
+		border-right-color: transparent;
+		text-align: center;
+		
+		// &:nth-child(even){
+		// 	border-color: $rojo;
+		// border-bottom-color: transparent;
+		// border-right-color: transparent;
+		// }
+		
+		// &:nth-child(odd){
+		// 	border-color: #61894e;
+		// border-bottom-color: transparent;
+		// border-right-color: transparent;
+		// }
+		
+		@for $i from 1 through 5 {
+			&:nth-child(#{$i}){
+				width: ($loader-size*$i)/2;
+				height: ($loader-size*$i)/2;
+				animation: rotate-circle linear infinite;
+				animation-duration: $loader-speed/$i*1s;
+			}	
+		}
+	}	
+	
+	@for $i from 0 through 9 {
+		
+		@keyframes rotate-circle{
+			100%{
+			  transform: rotate(360deg);
+			}
+		}
+		
+	}
+	
+}

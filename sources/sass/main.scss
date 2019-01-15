@@ -1,0 +1,44 @@
+
+@import 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css';
+// →→ Base → (Descomentar si se necesitan) ↓↓↓
+@import 'base/configuracion';
+@import 'base/grid'; // →→ Grilla de boostrap
+@import 'base/mediaquerys';
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/general';
+
+
+// →→ Utilidades → (Descomentar si se necesitan) ↓↓↓
+@import 'utilidades/flex';
+@import 'utilidades/mixins';
+@import 'utilidades/animaciones';
+
+
+// →→ Librerias → (Descomentar si se necesitan) ↓↓↓
+@import 'libraries/animateCSS';
+
+
+// →→ Componentes → (Descomentar si se necesitan) ↓↓↓
+// @import 'componentes/tablas';
+// @import 'componentes/select';
+@import 'componentes/menu-hamburger';
+@import 'componentes/loading';
+@import 'componentes/carousel';
+@import 'componentes/cajas';
+@import 'componentes/botones';
+@import 'componentes/formularios';
+@import 'componentes/breadcrumb';
+@import 'componentes/select';
+
+
+// →→ layouts → (Descomentar si se necesitan) ↓↓↓
+@import 'layouts/header';
+@import 'layouts/catalogo';
+@import 'layouts/redes';
+@import 'layouts/footer';
+
+
+// →→ Pages → (Descomentar si se necesitan) ↓↓↓
+@import 'pages/home';
+@import 'pages/interna';

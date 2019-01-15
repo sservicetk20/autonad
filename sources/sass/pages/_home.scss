@@ -1,0 +1,8 @@
+.filtro {
+	@include flexbox();
+	@include justify-content(space-around);
+	@include align-items(center);
+	padding: 15px;
+    background-color: $gris;
+    color:$blanco;
+}

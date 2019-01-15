@@ -1,0 +1,168 @@
+.titulo
+{
+	@include montserrat-x-bold;
+	color:$blanco;
+	text-align:center;
+}
+.singleMenu{
+	height: 700px;
+	background-color: $negro;
+	background-size: cover;
+	background-position: top center;
+	background-image: url('../img/header/banner-8.png');
+	background-attachment: fixed;
+	@include flexbox();
+	@include justify-content(space-around);
+	@include align-items(center);
+	@media #{$media-movil}{
+		height: 550px;
+		display: block;
+		padding: 10px 30px;
+	}
+	&__logo{
+		@include flex-basis(40%);
+	}
+	&__links{
+		.btn{
+			&__redondo{
+				width: 50px;
+				height: 50px;
+				margin: 0 3px;
+				img{
+					@media #{$media-movil}{
+						max-width: 60%;
+						max-height: 70%;
+					}
+				}
+			}
+		}
+	}
+	&__redes{
+		margin-bottom: 10px;
+		@include align-self(flex-end);
+		.btn{
+			&__redes{
+				width: 30px;
+				height: 30px;
+				background-color: transparent;
+				@include font-size(20);
+			}
+		}
+	}
+	&__links,
+	&__redes{
+		@media #{$media-movil}{
+			width: 100%;
+			display: none;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			text-align: center;
+			&.active{
+				display: block;
+			}
+		}
+	}
+}
+
+.containerBanner {
+	@include flexbox();
+	@include justify-content(space-around);
+	@include align-items(center);
+	background-color: $azul;
+	&__banner {
+		display: contents;
+		@include justify-content(space-around);
+		@include align-items(center);
+		background-color: $azul;
+		padding: 50px;
+		color:$blanco;
+		@media #{$media-movil}{
+			display: none;
+			
+		}
+	}
+	&__publicidadHome{
+		@include flexbox();
+		@include justify-content(space-around);
+		@include align-items(center);
+		background-color: $ColorPublicidadHome;
+		padding: 30px;
+		color:$blanco;
+		padding-left: 150px;
+		padding-right: 150px;
+		@media #{$media-movil}{
+			display: none;
+		}
+	}
+	&__imgpublicidad{
+		display: grid;
+		@include justify-content(space-around);
+		@include align-items(center);
+	}
+}
+
+.singleHeader{
+	background-color:$blanco;
+	@include flexbox();
+	@include justify-content(space-around);
+	@include align-items(center);
+	@media #{$media-movil}{
+		height: auto;
+		display: block;
+		padding: 10px 30px;
+	}
+	&__logo{
+		@include flex-basis(40%);
+		img{
+			padding-top: 5px;
+			@media #{$media-movil}{
+				max-width: 50%;
+			}
+		}
+	}
+	&__links{
+		.btn{
+			&__redondo{
+				width: 50px;
+				height: 50px;
+				margin: 0 3px;
+				img{
+					@media #{$media-movil}{
+						max-width: 60%;
+						max-height: 70%;
+					}
+				}
+			}
+		}
+	}
+	&__redes{
+		background-color:$breadcrum;
+		//padding: 5px;
+		@include align-self(flex-end);
+		.btn{
+			&__redes{
+				width: 30px;
+				height: 30px;
+				background-color: $negro;
+				@include font-size(20);
+			}
+		}
+		a {
+			color: $blanco;
+		}
+	}
+	&__links,
+	&__redes{
+		text-align: right;
+		@media #{$media-movil}{
+			text-align: left;
+			width: 100%;
+			display: none;
+			//margin-top: 20px;
+			//margin-bottom: 20px;
+			&.active{
+				display: block;
+			}
+		}
+	}
+}

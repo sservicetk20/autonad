@@ -1,0 +1,157 @@
+.containerRecetas{
+	&__receta{
+		height: 310px;
+		@include flexbox();
+		@media #{$media-movil}{
+			height: auto;
+			@include flex-wrap(wrap);
+		}
+		&--imagen{
+			width: 60%;
+			height: 100%;
+			display: block;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			@media #{$media-movil}{
+				width: 100%;
+				height: 180px;
+			}
+		}
+		&--texto{
+			width: 40%;
+			height: 100%;
+			padding-top: 10px;
+			padding-right: 10px;
+			padding-bottom: 10px;
+			@media #{$media-tablet}{
+				padding: 10px!important;
+			}
+			&-container{
+				height: 100%;
+				border-style: solid;
+				border-color: $blanco;
+				padding: 30px 20px 0 20px;
+				border-width: 2px 2px 2px 0;
+				@include flexbox;
+				@include flex-wrap(wrap);
+				@include justify-content(center);
+				@media #{$media-movil}{
+					padding: 5px;
+					display: block;
+					position: relative;
+					border-width: 0px!important;
+				}
+				&-titulo{
+					width: 100%;
+					line-height: 0.7;
+					color: $negro-texto;
+					@include font-size(40);
+					@include montserrat-bold;
+					@media #{$media-movil}{
+						letter-spacing: -2px;
+					}
+				}
+				&-descipcion{
+					width: 100%;
+					margin-top: 15px;
+					color: $negro-texto;
+					@include font-size(13.5);
+					@media #{$media-movil}{
+						height: auto;
+						min-height: 50px;
+						padding-right: 40px;
+					}
+				}
+				&-boton{
+					width: 100%;
+					margin-top: 20px;
+					text-align: center;
+					border-top: 1px solid $blanco;
+					@include align-self(center);
+					@media #{$media-movil}{
+						width: auto;
+						border-top: 0;
+						margin-top: 0;
+						margin-bottom: 0;
+						float: right;
+						right: 10px;
+						bottom: 10px;
+						position: absolute;
+					}
+				}
+			}
+			@media #{$media-movil}{
+				width: 100%;
+			}
+		}
+		// &__receta →→→ Pares ↓↓↓
+		&:nth-of-type(2n){
+			@include flex-direction(row-reverse);
+			.containerRecetas__receta--texto{
+				padding-right: 0;
+				padding-left: 10px;
+				.containerRecetas__receta--texto-container{
+					border-width: 2px 0 2px 2px;
+				}
+			}
+		}
+	}
+}
+
+.recetasRelacionadas{
+	&__receta{
+		margin-top: 40px;
+		margin-bottom: 40px;
+		@include flexbox();
+		@media #{$media-movil}{
+			// display: block;
+			margin-top: 25px;
+			margin-bottom: 25px;
+		}
+		&--left, &--right{
+		}
+		&--left{
+			height: 340px;
+			@include flex-basis(30%);
+			background-size: cover;
+			background-repeat: no-repeat;
+			@media #{$media-movil}{
+				height: auto;
+				background-size: contain;
+			}
+		}
+		&--right{
+			padding: 0 40px;
+			background-color: #F2F2F2;
+			@include flex-basis(70%);
+			@include flexbox();
+			@include align-items(center);
+			@media #{$media-movil}{
+				padding: 15px;
+			}
+		}
+	}
+	&--titulo{
+		line-height: 1;
+		margin-bottom: 15px;
+		letter-spacing: -2px;
+		text-transform: uppercase;
+		@include font-size(60);
+		@include montserrat-bold;
+		@media #{$media-movil}{
+			@include font-size(40);
+		}
+	}
+	&--descripcion{
+		@include font-size(16);
+	}
+	&--boton{
+		margin-top: 15px;
+		.btn__detalleReceta{
+			@media #{$media-movil}{
+				background-color: transparent!important;
+			}
+		}
+	}
+}
