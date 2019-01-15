@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css';
+/* ↓↓ colores Autonad ↓↓ */
 /* ↓↓ colores primarios ↓↓ */
 /* ↑↑ colores primarios ↑↑ */
 /* ↓↓ PRODUCTOS ↓↓ */
@@ -2971,6 +2972,32 @@ form input[type='email'] {
       margin-bottom: 10px; }
       .mainFooter__info--box p strong {
         text-transform: uppercase; }
+
+.ColumnProductHome {
+  padding: 50px;
+  border: 1px solid red; }
+  .ColumnProductHome__home {
+    background-color: · #EEEEEE;
+    padding: 5px;
+    border: 1px solid red; }
+  .ColumnProductHome__interno {
+    border: 1px solid red;
+    padding: 2px; }
+  .ColumnProductHome__Paddingnormalize {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .ColumnProductHome__CardProducto {
+    border: 1px solid red;
+    border-radius: 5px; }
+  .ColumnProductHome__CardProducto:hover {
+    box-shadow: -19px 104px 187px -31px rgba(0, 0, 0, 0.41); }
+  .ColumnProductHome__title {
+    color: #333;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.29; }
 
 .filtro {
   display: -moz-flex;

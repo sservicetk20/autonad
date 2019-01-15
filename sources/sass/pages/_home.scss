@@ -1,3 +1,38 @@
+.ColumnProductHome{	
+		padding: 50px;
+		border: 1px solid red;
+	&__home{
+		background-color: $fondo;
+		padding: 5px;
+		border: 1px solid red;
+	}
+	&__interno {
+		border:1px solid red;
+		padding: 2px;
+	}
+	&__Paddingnormalize{
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	&__CardProducto {
+		border:1px solid red;
+		border-radius: 5px;
+	}
+	&__CardProducto:hover{
+		-webkit-box-shadow: -19px 104px 187px -31px rgba(0,0,0,0.41);
+		-moz-box-shadow: -19px 104px 187px -31px rgba(0,0,0,0.41);
+		box-shadow: -19px 104px 187px -31px rgba(0,0,0,0.41);
+	}
+	&__title{
+		color: #333;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 1.29;
+	}
+}
+
 .filtro {
 	@include flexbox();
 	@include justify-content(space-around);
