@@ -459,6 +459,8 @@ $(document).ready(function() {
 	carrusel();
 	carrusel_interna();
 	popUpMasRecetas();
+	LeerMasUbicacion();
+	LeerMasModelo();
 });
 
 
@@ -574,6 +576,35 @@ function popUpMasRecetas() {
 		popUp.removeClass('popUpActive')
 	}
 }
+
+function LeerMasUbicacion() {
+	$('.leer-mas-ubicacion').click(function(){
+		var $this = $(this);
+		$this.toggleClass('leer-mas-ubicacion');
+		if($this.hasClass('leer-mas-ubicacion')){
+			$this.text('LEER MÁS');
+			$( ".vermas_ubicacion" ).removeClass( "vermas_abrir_ubicacion" ).addClass( "is-hidden" );
+		} else {
+			$this.text('LEER MENOS');
+			$( ".vermas_ubicacion" ).removeClass( "is-hidden" ).addClass( "vermas_abrir_ubicacion" );	
+		}
+	});
+}//LEER MAS
+
+function LeerMasModelo() {
+	$('.leer-mas-modelo').click(function(){
+		var $this = $(this);
+		$this.toggleClass('leer-mas-modelo');
+		if($this.hasClass('leer-mas-modelo')){
+			$this.text('LEER MÁS');
+			$( ".vermas_modelo" ).removeClass( "vermas_abrir_modelo" ).addClass( "is-hidden" );
+		} else {
+			$this.text('LEER MENOS');
+			$( ".vermas_modelo" ).removeClass( "is-hidden" ).addClass( "vermas_abrir_modelo" );	
+		}
+	});
+}//LEER MAS
+
 $(document).ready(function(){
 
 function alert(){

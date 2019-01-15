@@ -1,13 +1,13 @@
 .ColumnProductHome{	
 		padding: 50px;
-		border: 1px solid red;
+		//border: 1px solid red;
 	&__home{
 		background-color: $fondo;
 		padding: 5px;
-		border: 1px solid red;
+		//border: 1px solid red;
 	}
 	&__interno {
-		border:1px solid red;
+		//border:1px solid red;
 		padding: 2px;
 	}
 	&__Paddingnormalize{
@@ -17,19 +17,30 @@
 		padding-bottom: 5px;
 	}
 	&__CardProducto {
-		border:1px solid red;
+		//border:1px solid red;
 		border-radius: 5px;
 	}
 	&__CardProducto:hover{
-		-webkit-box-shadow: -19px 104px 187px -31px rgba(0,0,0,0.41);
-		-moz-box-shadow: -19px 104px 187px -31px rgba(0,0,0,0.41);
-		box-shadow: -19px 104px 187px -31px rgba(0,0,0,0.41);
+		-webkit-box-shadow: -6px 33px 56px -14px rgba(0,0,0,0.54);
+		-moz-box-shadow: -6px 33px 56px -14px rgba(0,0,0,0.54);
+		box-shadow: -6px 33px 56px -14px rgba(0,0,0,0.54);
 	}
 	&__title{
 		color: #333;
 		font-size: 14px;
 		font-weight: 300;
 		line-height: 1.29;
+	}
+	&__title strong {
+		color: #363636;
+    	font-weight: 700;
+	}
+	&__title content{
+		padding: 10px;
+	}
+	&__MenuRelevantes{
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 }
 
@@ -40,4 +51,20 @@
 	padding: 15px;
     background-color: $gris;
     color:$blanco;
+}
+
+.vermas_ubicacion{
+	display: none;
+}
+
+.vermas_abrir_ubicacion{
+	display: grid;
+}
+
+.vermas_modelo{
+	display: none;
+}
+
+.vermas_abrir_modelo{
+	display: grid;
 }
