@@ -2530,7 +2530,7 @@ label.btn input {
   -ms-flex-pack: center;
   -moz-justify-content: center;
   justify-content: center;
-  padding: 30px; }
+  padding: 10px; }
   .btn__transparente {
     color: #ffffff;
     border: 1px solid #ffffff;
@@ -2683,59 +2683,6 @@ form input[type='email'] {
       text-align: center; }
       .singleMenu__links.active, .singleMenu__redes.active {
         display: block; } }
-
-.containerBanner {
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  -moz-justify-content: space-around;
-  justify-content: space-around;
-  -ms-flex-align: center;
-  -moz-align-items: center;
-  align-items: center;
-  background-color: #3faaec; }
-  .containerBanner__banner {
-    display: contents;
-    -ms-flex-pack: distribute;
-    -moz-justify-content: space-around;
-    justify-content: space-around;
-    -ms-flex-align: center;
-    -moz-align-items: center;
-    align-items: center;
-    background-color: #3faaec;
-    padding: 50px;
-    color: #ffffff; }
-    @media only screen and (max-width: 767px) {
-      .containerBanner__banner {
-        display: none; } }
-  .containerBanner__publicidadHome {
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    -moz-justify-content: space-around;
-    justify-content: space-around;
-    -ms-flex-align: center;
-    -moz-align-items: center;
-    align-items: center;
-    background-color: #1a4b8a;
-    padding: 30px;
-    color: #ffffff;
-    padding-left: 150px;
-    padding-right: 150px; }
-    @media only screen and (max-width: 767px) {
-      .containerBanner__publicidadHome {
-        display: none; } }
-  .containerBanner__imgpublicidad {
-    display: -ms-grid;
-    display: grid;
-    -ms-flex-pack: distribute;
-    -moz-justify-content: space-around;
-    justify-content: space-around;
-    -ms-flex-align: center;
-    -moz-align-items: center;
-    align-items: center; }
 
 .singleHeader {
   background-color: #ffffff;
@@ -2973,8 +2920,81 @@ form input[type='email'] {
       .mainFooter__info--box p strong {
         text-transform: uppercase; }
 
+.containerBanner {
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  -moz-align-items: center;
+  align-items: center;
+  background-color: #3faaec; }
+  .containerBanner__banner {
+    display: contents;
+    background-color: #3faaec;
+    color: #ffffff; }
+    @media only screen and (max-width: 767px) {
+      .containerBanner__banner {
+        display: none; } }
+  .containerBanner__DivText {
+    padding: 30px; }
+  .containerBanner--DivTextouno {
+    text-align: left; }
+  .containerBanner--DivTextodos {
+    background-image: url("../../../Proyectos/autonad-github/img/sale.png");
+    background-repeat: no-repeat;
+    width: auto;
+    /*or your image's width*/
+    height: auto;
+    /*or your image's height*/
+    margin: 0;
+    padding: 0px 0px 0px 50px;
+    text-align: left; }
+  .containerBanner--textDivuno {
+    font-weight: 900;
+    font-size: 1.2em;
+    color: #ffffff; }
+  .containerBanner__publicidadHome {
+    color: #ffffff; }
+    @media only screen and (max-width: 767px) {
+      .containerBanner__publicidadHome {
+        display: none; } }
+  .containerBanner__imgpublicidad {
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    -moz-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-align: center;
+    -moz-align-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    background-color: #1a4b8a; }
+  .containerBanner__QuitarPadding {
+    padding-left: 0px;
+    padding-right: 0px; }
+
+.filtro {
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  -moz-align-items: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #474747;
+  color: #ffffff; }
+
 .ColumnProductHome {
-  padding: 50px; }
+  padding: 100px;
+  background-color: #EEEEEE; }
   .ColumnProductHome__home {
     background-color: #EEEEEE;
     padding: 5px; }
@@ -3003,19 +3023,8 @@ form input[type='email'] {
     padding-top: 10px;
     padding-bottom: 10px; }
 
-.filtro {
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  -moz-justify-content: space-around;
-  justify-content: space-around;
-  -ms-flex-align: center;
-  -moz-align-items: center;
-  align-items: center;
-  padding: 15px;
-  background-color: #474747;
-  color: #ffffff; }
+.imgpublicidad {
+  text-align: center; }
 
 .vermas_ubicacion {
   display: none; }

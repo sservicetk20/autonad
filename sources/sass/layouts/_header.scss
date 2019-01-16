@@ -64,42 +64,6 @@
 	}
 }
 
-.containerBanner {
-	@include flexbox();
-	@include justify-content(space-around);
-	@include align-items(center);
-	background-color: $azul;
-	&__banner {
-		display: contents;
-		@include justify-content(space-around);
-		@include align-items(center);
-		background-color: $azul;
-		padding: 50px;
-		color:$blanco;
-		@media #{$media-movil}{
-			display: none;
-			
-		}
-	}
-	&__publicidadHome{
-		@include flexbox();
-		@include justify-content(space-around);
-		@include align-items(center);
-		background-color: $ColorPublicidadHome;
-		padding: 30px;
-		color:$blanco;
-		padding-left: 150px;
-		padding-right: 150px;
-		@media #{$media-movil}{
-			display: none;
-		}
-	}
-	&__imgpublicidad{
-		display: grid;
-		@include justify-content(space-around);
-		@include align-items(center);
-	}
-}
 
 .singleHeader{
 	background-color:$blanco;

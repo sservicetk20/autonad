@@ -1,5 +1,72 @@
+
+.containerBanner {
+	@include flexbox();
+	@include justify-content(space-around);
+	@include align-items(center);
+	background-color: $azul;
+	&__banner {
+		display: contents;
+		background-color: $azul;
+		color:$blanco;
+		@media #{$media-movil}{
+			display: none;
+			
+		}
+	}
+	&__DivText{
+		padding: 30px;
+	}
+	&--DivTextouno{
+		text-align: left;
+	}
+	&--DivTextodos{
+		background-image: url("../../../Proyectos/autonad-github/img/sale.png");
+		background-repeat: no-repeat;
+		width: auto; /*or your image's width*/
+		height: auto; /*or your image's height*/
+		margin: 0;
+		padding: 0px 0px 0px 50px;
+		text-align: left;
+	}
+	&--textDivuno{
+		font-weight: 900;
+    	font-size: 1.2em;
+		color: $blanco;
+	}
+	&__publicidadHome{
+		color:$blanco;
+		@media #{$media-movil}{
+			display: none;
+		}
+	}
+	&__imgpublicidad{
+		@include flexbox();
+		@include justify-content(space-around);
+		@include align-items(center);
+		text-align: center;
+		padding: 5px;
+		background-color: $ColorPublicidadHome;
+	}
+	&__QuitarPadding {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+.filtro {
+	@include flexbox();
+	@include justify-content(space-around);
+	@include align-items(center);
+	padding: 15px;
+    background-color: $gris;
+    color:$blanco;
+}
+
+
+
 .ColumnProductHome{	
-		padding: 50px;
+		padding: 100px;
+		background-color: $fondo;
 		//border: 1px solid red;
 	&__home{
 		background-color: $fondo;
@@ -44,13 +111,8 @@
 	}
 }
 
-.filtro {
-	@include flexbox();
-	@include justify-content(space-around);
-	@include align-items(center);
-	padding: 15px;
-    background-color: $gris;
-    color:$blanco;
+.imgpublicidad{
+	text-align: center;
 }
 
 .vermas_ubicacion{
