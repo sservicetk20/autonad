@@ -1,8 +1,8 @@
+
 .mainFooter{
 	position: relative;
 	color: $blanco;
 	background-color: #56595e;
-	margin-top: 10px;
 	&::after{
 		display: block;
 		content: "";
@@ -11,18 +11,31 @@
 		bottom: 0px;
 		height: 65px;
 		position: absolute;
-		background-size: auto 100%;
-		background-repeat: repeat-x;
+		background-repeat: no-repeat;
+		background-image: url("../../../Proyectos/autonad-github/img/contacto.png");
+		margin: 0px 0px 15px 0px;
+		@media #{$media-extra-movil}{
+			background-image: none;
+			padding: 0px;
+		}
+		@media #{$media-tablet}{
+			background-image: none;
+			padding: 0px;
+		}
 	}
+	
 	&--container{
-		max-width: 1250px;
+		//max-width: 1550px;
 		margin-left: auto;
 		margin-right: auto;
-		padding: 5px 5px 5px 5px;
+		padding: 5px 0px 5px 60px;
 		@include flexbox;
+		@media #{$media-extra-movil}{
+			padding: 0px;
+		}
 		@media #{$media-tablet}{
 			display: block;
-			padding-bottom: 70px;
+			//padding-bottom: 70px;
 		}
 		&-column{
 			@include flexbox;
@@ -30,7 +43,7 @@
 			@include flex-grow(1);
 			@media #{$media-tablet}{
 				text-align: center;
-				margin-bottom: 20px;
+				margin-bottom: 5px;
 				@include justify-content (center);
 			}
 			@media #{$media-extra-movil}{
@@ -85,6 +98,7 @@
 				display: inline-block;
 				vertical-align: middle;
 				@include font-size(15);
+				font-weight: 900;
 			}
 			.btn{
 				width: 30px;
