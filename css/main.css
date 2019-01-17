@@ -3062,6 +3062,7 @@ form input[type='email'] {
   display: grid; }
 
 .ColumProduct {
+  padding: 5px;
   background-color: #ffffff; }
   .ColumProduct__figure {
     padding: 1px; }
