@@ -117,64 +117,225 @@
                 
 
                 <button class="button is-primary">Buscar</button>
-        </div>
-    </form>
+            </form>
+            </div>
+
 <!--columna producto-->
-<div class="ColumProduct">
-        <div class="row">
-                <div class="col-md-12">              
-                    <div class="row">
-                        <div class="col-md-2">
-                            <figure class="ColumProduct__figure image is-128x128">
-                                <a href="#uno"><img  src="https://bulma.io/images/placeholders/128x128.png"></a>
-                            </figure>
-                            <figure class="ColumProduct__figure image is-128x128">
-                                <a href="#dos"><img  src="https://bulma.io/images/placeholders/128x128.png"></a>
-                            </figure>
-                            <figure class="ColumProduct__figure image is-128x128">
-                                <a href="#tres"><img  src="https://bulma.io/images/placeholders/128x128.png"></a>
-                            </figure>
-                        </div>
-                        <div class="col-md-5">
-                            <div class="ColumnSlider">
-                                <!-- SLIDER PRODUCTOS↓_↓_↓_↓_↓ SLIDER --> <!--  SLIDER ↓_↓_↓_↓_↓ SLIDER -->
-                                <div id="carousel-interna" class="carrusel owl-carousel owl-carousel-interna">
-                                    <div class="item" data-hash="uno" style="width:100%">
-                                        <img src="http://lorempixel.com/1200/640/transport/1" alt="Producto">
-                                    </div>
-                                    <div class="item" data-hash="dos" style="width:100%">
-                                        <img src="http://lorempixel.com/1200/640/transport/2" alt="Producto">
-                                    </div>
-                                    <div class="item" data-hash="tres" style="width:100%">
-                                        <img src="http://lorempixel.com/1200/640/transport/3" alt="Producto">
-                                    </div>
+<div class="ColumProduct__fondo">
+    <div class="ColumProduct">
+        <div class="row ColumProduct__DivFigure">
+            <div class="col-md-12 ColumProduct__QuitarPadding">              
+                <div class="row ">
+                    <div class="ColumProduct col-lg-2 hidden-md hidden-sm">
+                        <figure class="ColumProduct__figure image is-128x128">
+                            <a href="#uno"><img  src="https://bulma.io/images/placeholders/128x128.png"></a>
+                        </figure>
+                        <figure class="ColumProduct__figure image is-128x128">
+                            <a href="#dos"><img  src="https://bulma.io/images/placeholders/128x128.png"></a>
+                        </figure>
+                        <figure class="ColumProduct__figure image is-128x128">
+                            <a href="#tres"><img  src="https://bulma.io/images/placeholders/128x128.png"></a>
+                        </figure>
+                        <figure class="ColumProduct__figure image is-128x128">
+                            <a href="#cuatro"><img  src="https://bulma.io/images/placeholders/128x128.png"></a>
+                        </figure>
+                        <figure class="ColumProduct__figure image is-128x128">
+                            <a href="#cinco"><img  src="https://bulma.io/images/placeholders/128x128.png"></a>
+                        </figure>
+                    </div>
+                    <div class="col-lg-7 col-md-6 col-sm-6">
+                        <div class="ColumnSlider">
+                            <!-- SLIDER PRODUCTOS↓_↓_↓_↓_↓ SLIDER --> <!--  SLIDER ↓_↓_↓_↓_↓ SLIDER -->
+                            <div id="carousel-interna" class="carrusel owl-carousel owl-carousel-interna">
+                                <div class="item" data-hash="uno" style="width:100%">
+                                    <img src="http://lorempixel.com/1200/800/transport/1" alt="Producto">
+                                </div>
+                                <div class="item" data-hash="dos" style="width:100%">
+                                    <img src="http://lorempixel.com/1200/800/transport/2" alt="Producto">
+                                </div>
+                                <div class="item" data-hash="tres" style="width:100%">
+                                    <img src="http://lorempixel.com/1200/800/transport/3" alt="Producto">
+                                </div>
+                                <div class="item" data-hash="cuatro" style="width:100%">
+                                    <img src="http://lorempixel.com/1200/800/transport/4" alt="Producto">
+                                </div>
+                                <div class="item" data-hash="cinco" style="width:100%">
+                                    <img src="http://lorempixel.com/1200/800/transport/5" alt="Producto">
                                 </div>
                             </div>
-                           
-        
                         </div>
-                        <div class="col-md-5">
-                           <div class="columInfoProduct">
-                                <div class="media-content">
-                                    <strong class="columInfoProduct__titulo">Mazda Mazda 2 Mazda 2 Grabd Tour.<br></strong>
-                                </div>
-                                <div class="content">
-                                    <p class="columInfoProduct__precio title is-4">$46.900.000</p>
-                                    <p class="subtitle is-6">El vehículo está en Teusaquillo - Bogotá D.C</p>
-                                </div>
-                                <div class="control is-loading">
-                                    <textarea class="textarea" placeholder="Loading textarea"></textarea>
-                                </div>
-                           </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 ColumProduct__QuitarPadding">
+                        <div class="columInfoProduct">
+
+                            <div class="media-content">
+                                <strong class="columInfoProduct__titulo">Mazda Mazda 2 Mazda 2 Grabd Tour.<br></strong>
+                            </div>
+
+                            <div class="content">
+                                <p class="columInfoProduct__precio title is-4">$46.900.000</p>
+                                <p class="subtitle is-6"><i class="fa fa-map-marker-alt"></i>El vehículo está en Teusaquillo - Bogotá D.C</p>
+                            </div>
+
+                            <div class="control is-loading">
+                                <textarea class="textarea" placeholder="Loading textarea"></textarea>
+                            </div>
+
+                            <div class="btn-preguntar">
+                                <a class="button is-fullwidth is-info">Preguntar</a>
+                            </div>
+                       
+                            <div class="btn-llamen">
+                                <a class="button is-fullwidth is-focused">Quiero que me llamen</a>
+                            </div>
+                            <div class="btn-comprar">
+                                <a class="button is-fullwidth is-success">Comprar/Separar</a>
+                            </div>
+                            <div class="btn-compramos">
+                                    <a class="button is-fullwidth is-info">Compramos tu usado a domicilio</a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-            
-            </div>
-    
-</div><!--fin de columnProduct -->
+            </div>    
+        </div>
+    </div><!--fin de columnProduct -->  
+    <!-- ficha tecnica --> 
+    <div class="ColuminfoProductoFicha">
+            <div class="ColuminfoProductoFicha__fichatecnica">
+                    <div class="row">
+                        <div class="col-md-12 ColuminfoProductoFicha__QuitarPadding">
 
-    
+                            <div class="row">
+
+                                <div class="col-md-8 ColuminfoProductoFicha__QuitarPadding">
+                                    <div class="card">
+                                        <strong class="ColuminfoProductoFicha--tituloFicha">Ficha Técnica</strong>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <aside class="fichatecnica">
+                                                    <p class="menu-label">Color</p>
+                                                    <ul class="menu-list">
+                                                        <li><a>Rojo</a></li>
+                                                    </ul>
+                                                </aside>
+                                                <aside class="fichatecnica">
+                                                    <p class="menu-label">Marca</p>
+                                                        <ul class="menu-list">
+                                                            <li><a>Rojo</a></li>
+                                                        </ul>
+                                                </aside>
+                                                <aside class="fichatecnica">
+                                                    <p class="menu-label">Placa</p>
+                                                    <ul class="menu-list">
+                                                        <li><a>Rojo</a></li>
+                                                    </ul>
+                                                </aside>
+                                                <aside class="fichatecnica">
+                                                    <p class="menu-label">Dirreción</p>
+                                                    <ul class="menu-list">
+                                                        <li><a>Rojo</a></li>
+                                                    </ul>
+                                                </aside>
+                                                <aside class="fichatecnica">
+                                                    <p class="menu-label">Negociable</p>
+                                                    <ul class="menu-list">
+                                                        <li><a>Rojo</a></li>
+                                                    </ul>
+                                                </aside>
+                                                <aside class="fichatecnica">
+                                                    <p class="menu-label">Transmisión</p>
+                                                    <ul class="menu-list">
+                                                        <li><a>Rojo</a></li>
+                                                    </ul>
+                                                </aside>
+                                            </div>
+                                            <div class="col-md-4">
+                                            <aside class="fichatecnica">
+                                                    <p class="menu-label">Color</p>
+                                                    <ul class="menu-list">
+                                                        <li><a>Rojo</a></li>
+                                                    </ul>
+                                                </aside>
+                                                <aside class="fichatecnica">
+                                                    <p class="menu-label">Marca</p>
+                                                        <ul class="menu-list">
+                                                            <li><a>Rojo</a></li>
+                                                        </ul>
+                                                </aside>
+                                                <aside class="fichatecnica">
+                                                    <p class="menu-label">Placa</p>
+                                                    <ul class="menu-list">
+                                                        <li><a>Rojo</a></li>
+                                                    </ul>
+                                                </aside>
+                                                <aside class="fichatecnica">
+                                                    <p class="menu-label">Dirreción</p>
+                                                    <ul class="menu-list">
+                                                        <li><a>Rojo</a></li>
+                                                    </ul>
+                                                </aside>
+                                                <aside class="fichatecnica">
+                                                    <p class="menu-label">Negociable</p>
+                                                    <ul class="menu-list">
+                                                        <li><a>Rojo</a></li>
+                                                    </ul>
+                                                </aside>
+                                            </div>
+                                            <div class="col-md-4">
+                                            <aside class="fichatecnica">
+                                                    <p class="menu-label">Color</p>
+                                                    <ul class="menu-list">
+                                                        <li><a>Rojo</a></li>
+                                                    </ul>
+                                                </aside>
+                                                <aside class="fichatecnica">
+                                                    <p class="menu-label">Marca</p>
+                                                        <ul class="menu-list">
+                                                            <li><a>Rojo</a></li>
+                                                        </ul>
+                                                </aside>
+                                                <aside class="fichatecnica">
+                                                    <p class="menu-label">Placa</p>
+                                                    <ul class="menu-list">
+                                                        <li><a>Rojo</a></li>
+                                                    </ul>
+                                                </aside>
+                                                <aside class="fichatecnica">
+                                                    <p class="menu-label">Dirreción</p>
+                                                    <ul class="menu-list">
+                                                        <li><a>Rojo</a></li>
+                                                    </ul>
+                                                </aside>
+                                                <aside class="fichatecnica">
+                                                    <p class="menu-label">Negociable</p>
+                                                    <ul class="menu-list">
+                                                        <li><a>Rojo</a></li>
+                                                    </ul>
+                                                </aside>
+                                            </div>
+                                        </div>     
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 ColuminfoProductoFicha__QuitarPadding">
+                                    <div class="card">
+                                        <div class="row">
+                                            <div class="col-md-12 ColuminfoProductoFicha__QuitarPadding">
+                                                banner
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+                
+    </div> 
+</div>
 
 
     
@@ -239,17 +400,6 @@
 						</a>
 					</div>
 				</div>
-			</div>
-			<div class="mainFooter__info mainFooter--container-column">
-				
-					<div>
-				
-						<div class="mainFooter__info--box">
-						
-						</div>
-					
-					</div>
-			
 			</div>
 		</div>
 	</footer>

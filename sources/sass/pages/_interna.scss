@@ -1,26 +1,66 @@
 .ColumProduct {
-    padding: 5px;
-    border: 2px solid red;
+    background-color: $blanco;
+    //border: 2px solid red;
     &__figure {
         padding: 1px;
     }
+    &__fondo{
+        padding: 100px;
+		background-color: $fondo;
+        //border: 1px solid red;
+        @media #{$media-movil}{
+            padding: 0px;
+            display: none;
+        }
+        @media #{$media-tablet}{
+            padding: 0px;
+            display: none;
+		}
+    }
+    &__DivFigure{
+        box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+    }
+    &__figure{
+        //border: 1px solid red;
+    }
+    &__QuitarPadding {
+		padding-left: 0px;
+		padding-right: 0px;
+    }
 }
 .ColumnSlider {
-    border: 2px solid red;
+    //border: 2px solid red;
+    //box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
 }
 .columInfoProduct{
-    border: 2px solid red; 
-    padding: 50px;
+    //border: 2px solid red; 
         &__titulo {
             @include montserrat-x-bold;
 	        color:$negro;
             text-align:center;
-            font-size: 50px;
+            font-size: 1.5em;
         }
         &__precio {
             @include montserrat-x-bold;
 	        color:$negro;
             text-align:left;
-            font-size: 50px;
+            font-size: 1.5em;
         }
+}
+
+.ColumProduct.col-lg-2{
+    width: auto;
+}
+
+.ColuminfoProductoFicha{
+    &__fichatecnica{
+        //border: 1px solid red;
+    }
+    &__QuitarPadding {
+		padding-left: 0px;
+		padding-right: 0px;
+    }
+    &--tituloFicha{
+        padding: 15px;
+    }
 }
