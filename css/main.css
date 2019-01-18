@@ -1970,9 +1970,9 @@ strong.text_white {
   top: 2.8rem;
   right: 1.5rem;
   cursor: pointer;
-  width: 58px;
+  width: 29px;
   position: absolute;
-  height: 22px;
+  height: 11px;
   display: none; }
   @media only screen and (max-width: 767px) {
     .hamburger-menu {
@@ -1980,12 +1980,12 @@ strong.text_white {
   .hamburger-menu .bar,
   .hamburger-menu .bar:after,
   .hamburger-menu .bar:before {
-    width: 58px;
-    height: 2px;
-    border-radius: 2px; }
+    width: 29px;
+    height: 1px;
+    border-radius: 1px; }
   .hamburger-menu .bar {
     position: relative;
-    transform: translateY(10px);
+    transform: translateY(5px);
     background: #0e0c0c;
     transition: all 0ms 300ms; }
     .hamburger-menu .bar.animate {
@@ -1994,14 +1994,14 @@ strong.text_white {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 10px;
+    bottom: 5px;
     background: #0e0c0c;
     transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
   .hamburger-menu .bar:after {
     content: "";
     position: absolute;
     left: 0;
-    top: 10px;
+    top: 5px;
     background: #0e0c0c;
     transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
   .hamburger-menu .bar.animate:after {
@@ -2012,6 +2012,73 @@ strong.text_white {
     bottom: 0;
     transform: rotate(-45deg);
     transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.hamburger-filtro {
+  z-index: 2;
+  top: 2.6rem;
+  right: 4.5rem;
+  background-image: url("../../../Proyectos/autonad-github/img/filter-outline.png");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  width: 29px;
+  position: absolute;
+  height: 30px;
+  display: none; }
+  @media only screen and (max-width: 767px) {
+    .hamburger-filtro {
+      display: block; } }
+  .hamburger-filtro .bar-filtro,
+  .hamburger-filtro .bar-filtro:after,
+  .hamburger-filtro .bar-filtro:before {
+    width: 29px;
+    height: 10px;
+    border-radius: 10px; }
+  .hamburger-filtro .bar-filtro {
+    position: relative;
+    transform: translateY(10px);
+    transition: all 0ms 300ms; }
+    .hamburger-filtro .bar-filtro.animate {
+      background: rgba(255, 255, 255, 0); }
+  .hamburger-filtro .bar-filtro:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .hamburger-filtro .bar-filtro:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .hamburger-filtro .bar-filtro.animate:after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  .hamburger-filtro .bar-filtro.animate:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+
+.filtro {
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  -moz-align-items: center;
+  align-items: center;
+  padding: 15px;
+  background-color: #474747;
+  color: #ffffff; }
+
+.ColumFiltroMobile__filtro {
+  background-color: none; }
+
+.ColumFiltroMobile--selectMobile.select {
+  padding-bottom: 40px; }
 
 body.loading .loader-wrap {
   display: block; }
@@ -2749,6 +2816,59 @@ form input[type='email'] {
         .singleHeader__links.active, .singleHeader__redes.active {
           display: block; } }
 
+.singlefiltro {
+  background-color: #ffffff;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-align: center;
+  -moz-align-items: center;
+  align-items: center; }
+  @media only screen and (max-width: 767px) {
+    .singlefiltro {
+      height: auto;
+      display: block;
+      padding: 10px 30px; } }
+  .singlefiltro__logo {
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%; }
+    .singlefiltro__logo img {
+      padding-top: 5px; }
+      @media only screen and (max-width: 767px) {
+        .singlefiltro__logo img {
+          max-width: 50%; } }
+  .singlefiltro__links .btn__redondo {
+    width: 50px;
+    height: 50px;
+    margin: 0 3px; }
+    @media only screen and (max-width: 767px) {
+      .singlefiltro__links .btn__redondo img {
+        max-width: 60%;
+        max-height: 70%; } }
+  .singlefiltro__redes {
+    background-color: #56595e;
+    -ms-flex-item-align: end;
+    align-self: flex-end; }
+    .singlefiltro__redes .btn__redes {
+      width: 30px;
+      height: 30px;
+      background-color: #000;
+      font-size: 1.25rem; }
+    .singlefiltro__redes a {
+      color: #ffffff; }
+  .singlefiltro__links, .singlefiltro__redes {
+    text-align: right; }
+    @media only screen and (max-width: 767px) {
+      .singlefiltro__links, .singlefiltro__redes {
+        text-align: left;
+        width: 100%;
+        display: none; }
+        .singlefiltro__links.active, .singlefiltro__redes.active {
+          display: block; } }
+
 .ColumnProductos {
   padding: 10px; }
 
@@ -2999,20 +3119,6 @@ form input[type='email'] {
     padding-left: 0px;
     padding-right: 0px; }
 
-.filtro {
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  -moz-justify-content: space-around;
-  justify-content: space-around;
-  -ms-flex-align: center;
-  -moz-align-items: center;
-  align-items: center;
-  padding: 15px;
-  background-color: #474747;
-  color: #ffffff; }
-
 .ColumnProductHome {
   padding: 50px;
   background-color: #EEEEEE; }
@@ -3112,3 +3218,6 @@ form input[type='email'] {
 
 .ColuminfoProductoFicha--tituloFicha {
   padding: 15px; }
+
+aside.fichatecnica {
+  padding: 5px; }

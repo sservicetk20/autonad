@@ -7,6 +7,7 @@ window.onload = function() {
 
 $(document).ready(function() {
 	menuHamburguesa();
+	menuFiltro();
 	carrusel();
 	carrusel_interna();
 	LeerMasUbicacion();
@@ -21,6 +22,14 @@ function menuHamburguesa() {
 		$('.bar').toggleClass('animate');
 
 		$('.singleHeader__links, .singleHeader__redes').toggleClass('active');
+	})
+}
+
+function menuFiltro() {
+	$('.hamburger-filtro').on('click', function() {
+		$('.bar-filtro').toggleClass('animate');
+
+		$('.singlefiltro__links').toggleClass('active');
 	})
 }
 
