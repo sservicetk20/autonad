@@ -458,6 +458,7 @@ $(document).ready(function() {
 	LeerMasUbicacion();
 	LeerMasModelo();
 	Modal();
+	ModalMobile();
 });
 
 
@@ -570,6 +571,16 @@ function LeerMasModelo() {
 
 function Modal() {
 	$("#showModal").click(function() {
+		$(".modal").addClass("is-active");  
+	  });
+	  
+	  $(".modal-close").click(function() {
+		 $(".modal").removeClass("is-active");
+	  });	
+}
+
+function ModalMobile() {
+	$("#showModal-mobile").click(function() {
 		$(".modal").addClass("is-active");  
 	  });
 	  
