@@ -3073,12 +3073,10 @@ form input[type='email'] {
     background-color: #EEEEEE; }
     @media only screen and (max-width: 767px) {
       .ColumProduct__fondo {
-        padding: 0px;
-        display: none; } }
+        padding: 0px; } }
     @media only screen and (max-width: 991px) {
       .ColumProduct__fondo {
-        padding: 0px;
-        display: none; } }
+        padding: 0px; } }
   .ColumProduct__DivFigure {
     box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
     background-color: #EEEEEE; }

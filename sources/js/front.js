@@ -1,20 +1,17 @@
 
-window.onbeforeunload = resetApp;
-
 window.onload = function() {
 	removeLoading();
 	activateAnimate();
 	parallax_page();
-	paginador();
 };
 
 $(document).ready(function() {
 	menuHamburguesa();
 	carrusel();
 	carrusel_interna();
-	popUpMasRecetas();
 	LeerMasUbicacion();
 	LeerMasModelo();
+	Modal();
 });
 
 
@@ -26,30 +23,6 @@ function menuHamburguesa() {
 	})
 }
 
-function resetApp(){
-	// window.scrollTo(0, 0);
-	$('body').addClass('loading');
-}
-
-function paginador() {
-
-	if (utilidadesJS.buscarUrl('/page/')) {
-		slideTo('#seccionCatalogo');
-	}
-
-	var cantidadColores = $('.catalogo__paginador--container a').length;
-
-	var base = new KolorWheel('f1bf0e');
-	var target = base.abs("#c66713",cantidadColores);
-
-
-	for (var i = 0; i < cantidadColores; i++) {
-		// console.log(target.get(i).getHex());
-		var colorGenerado = target.get(i).getHex();
-		$('.catalogo__paginador--container a').eq(i).css('background-color', colorGenerado);
-	}
-
-}
 
 function removeLoading() {
 	// $('body').removeClass('loading');
@@ -119,17 +92,6 @@ function slideTo(elemento) {
 	}, 700);
 }
 
-function popUpMasRecetas() {
-	var popUp = $('.catalogo--recetas.popUpActive');
-	popUp.on('tap', function() {
-		$(this).removeClass('popUpActive');
-		localStorage.setItem("PopUpentendido", true);
-	});
-	var estadoPopUp = localStorage.getItem("PopUpentendido");
-	if (estadoPopUp) {
-		popUp.removeClass('popUpActive')
-	}
-}
 
 function LeerMasUbicacion() {
 	$('.leer-mas-ubicacion').click(function(){
@@ -158,3 +120,14 @@ function LeerMasModelo() {
 		}
 	});
 }//LEER MAS
+
+
+function Modal() {
+	$("#showModal").click(function() {
+		$(".modal").addClass("is-active");  
+	  });
+	  
+	  $(".modal-close").click(function() {
+		 $(".modal").removeClass("is-active");
+	  });	
+}

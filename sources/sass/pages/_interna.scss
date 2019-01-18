@@ -15,11 +15,9 @@
         //border: 1px solid red;
         @media #{$media-movil}{
             padding: 0px;
-            display: none;
         }
         @media #{$media-tablet}{
             padding: 0px;
-            display: none;
 		}
     }
     &__DivFigure{
