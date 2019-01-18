@@ -3092,13 +3092,8 @@ form input[type='email'] {
     width: calc(100vw - calc(100vw - 6%)); }
 
 .columInfoProduct {
-  width: calc(100vw - calc(100vw - 48%));
-  z-index: 999;
-  position: fixed;
   padding: 40px;
   line-height: 50px;
-  position: -webkit-sticky;
-  position: -webkit;
   background-color: #EEEEEE; }
   .columInfoProduct__titulo {
     font-weight: 800;

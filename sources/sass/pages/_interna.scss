@@ -49,13 +49,13 @@
 
 .columInfoProduct{
     //border: 2px solid red; 
-    width: calc(100vw - calc(100vw - 48%));
-    z-index: 999;
-    position: fixed;
+    //width: calc(100vw - calc(100vw - 40%));
+    //z-index: 999;
+    //position: fixed;
     padding: 40px;
     line-height: 50px;
-    position: -webkit-sticky;
-    position: -webkit;
+    //position: -webkit-sticky;
+    //position: -webkit;
     background-color:$fondo;
         &__titulo {
             @include montserrat-x-bold;
