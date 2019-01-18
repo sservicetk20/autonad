@@ -1,12 +1,16 @@
 .ColumProduct {
     padding: 5px;
+    border-radius: 5px;
     background-color: $blanco;
+    -webkit-box-shadow: -6px 33px 56px -14px rgba(0,0,0,0.54);
+		-moz-box-shadow: -6px 33px 56px -14px rgba(0,0,0,0.54);
+		box-shadow: -6px 33px 56px -14px rgba(0,0,0,0.54);
     //border: 2px solid red;
     &__figure {
         padding: 1px;
     }
     &__fondo{
-        padding: 100px;
+        padding: 50px;
 		background-color: $fondo;
         //border: 1px solid red;
         @media #{$media-movil}{
@@ -20,6 +24,7 @@
     }
     &__DivFigure{
         box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
+        background-color:$fondo;
     }
     &__figure{
         //border: 1px solid red;
@@ -28,13 +33,30 @@
 		padding-left: 0px;
 		padding-right: 0px;
     }
+    &__ImgProductMini{
+        padding:5px;
+    }
+    &__ImgProductMini-left{
+        padding-right: 5px;
+        width: calc(100vw - calc(100vw - 6%));
+    }
 }
 .ColumnSlider {
     //border: 2px solid red;
     //box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
 }
+
+
 .columInfoProduct{
     //border: 2px solid red; 
+    width: calc(100vw - calc(100vw - 48%));
+    z-index: 999;
+    position: fixed;
+    padding: 40px;
+    line-height: 50px;
+    position: -webkit-sticky;
+    position: -webkit;
+    background-color:$fondo;
         &__titulo {
             @include montserrat-x-bold;
 	        color:$negro;
@@ -47,10 +69,6 @@
             text-align:left;
             font-size: 1.5em;
         }
-}
-
-.ColumProduct.col-lg-2{
-    width: auto;
 }
 
 .ColuminfoProductoFicha{

@@ -3014,7 +3014,7 @@ form input[type='email'] {
   color: #ffffff; }
 
 .ColumnProductHome {
-  padding: 100px;
+  padding: 50px;
   background-color: #EEEEEE; }
   .ColumnProductHome__home {
     background-color: #EEEEEE;
@@ -3063,11 +3063,13 @@ form input[type='email'] {
 
 .ColumProduct {
   padding: 5px;
-  background-color: #ffffff; }
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: -6px 33px 56px -14px rgba(0, 0, 0, 0.54); }
   .ColumProduct__figure {
     padding: 1px; }
   .ColumProduct__fondo {
-    padding: 100px;
+    padding: 50px;
     background-color: #EEEEEE; }
     @media only screen and (max-width: 767px) {
       .ColumProduct__fondo {
@@ -3078,27 +3080,38 @@ form input[type='email'] {
         padding: 0px;
         display: none; } }
   .ColumProduct__DivFigure {
-    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1); }
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    background-color: #EEEEEE; }
   .ColumProduct__QuitarPadding {
     padding-left: 0px;
     padding-right: 0px; }
+  .ColumProduct__ImgProductMini {
+    padding: 5px; }
+  .ColumProduct__ImgProductMini-left {
+    padding-right: 5px;
+    width: calc(100vw - calc(100vw - 6%)); }
 
-.columInfoProduct__titulo {
-  font-weight: 800;
-  font-family: 'Montserrat', sans-serif;
-  color: #000;
-  text-align: center;
-  font-size: 1.5em; }
-
-.columInfoProduct__precio {
-  font-weight: 800;
-  font-family: 'Montserrat', sans-serif;
-  color: #000;
-  text-align: left;
-  font-size: 1.5em; }
-
-.ColumProduct.col-lg-2 {
-  width: auto; }
+.columInfoProduct {
+  width: calc(100vw - calc(100vw - 48%));
+  z-index: 999;
+  position: fixed;
+  padding: 40px;
+  line-height: 50px;
+  position: -webkit-sticky;
+  position: -webkit;
+  background-color: #EEEEEE; }
+  .columInfoProduct__titulo {
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    text-align: center;
+    font-size: 1.5em; }
+  .columInfoProduct__precio {
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    text-align: left;
+    font-size: 1.5em; }
 
 .ColuminfoProductoFicha__QuitarPadding {
   padding-left: 0px;
