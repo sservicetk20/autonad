@@ -3199,6 +3199,12 @@ form input[type='email'] {
   padding: 40px;
   line-height: 50px;
   background-color: #EEEEEE; }
+  @media only screen and (max-width: 767px) {
+    .columInfoProduct {
+      line-height: 25px; } }
+  @media only screen and (max-width: 991px) {
+    .columInfoProduct {
+      line-height: 25px; } }
   .columInfoProduct__titulo {
     font-weight: 800;
     font-family: 'Montserrat', sans-serif;

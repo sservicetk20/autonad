@@ -54,6 +54,12 @@
     line-height: 50px;
     //position: -webkit-sticky;
     //position: -webkit;
+    @media #{$media-movil}{
+        line-height: 25px;
+    }
+    @media #{$media-tablet}{
+        line-height: 25px;
+    }
     background-color:$fondo;
         &__titulo {
             @include montserrat-x-bold;
