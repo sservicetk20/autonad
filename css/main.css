@@ -2017,7 +2017,7 @@ strong.text_white {
   z-index: 2;
   top: 2.6rem;
   right: 4.5rem;
-  background-image: url("../../../Proyectos/autonad-github/img/filter-outline.png");
+  background-image: url("../img/filter-outline.png");
   background-repeat: no-repeat;
   cursor: pointer;
   width: 29px;
@@ -2965,7 +2965,7 @@ form input[type='email'] {
     height: 65px;
     position: absolute;
     background-repeat: no-repeat;
-    background-image: url("../../../Proyectos/autonad-github/img/contacto.png");
+    background-image: url("../img/contacto.png");
     margin: 0px 0px 15px 0px; }
     @media only screen and (max-width: 480px) {
       .mainFooter::after {
@@ -3084,7 +3084,7 @@ form input[type='email'] {
   .containerBanner--DivTextouno {
     text-align: left; }
   .containerBanner--DivTextodos {
-    background-image: url("../../../Proyectos/autonad-github/img/sale.png");
+    background-image: url("../img/sale.png");
     background-repeat: no-repeat;
     width: auto;
     /*or your image's width*/
