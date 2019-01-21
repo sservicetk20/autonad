@@ -2822,8 +2822,7 @@ form input[type='email'] {
         width: 100%;
         display: none; }
         .singleHeader__links.active, .singleHeader__redes.active {
-          display: -ms-grid;
-          display: grid; } }
+          display: inline-block; } }
   .singleHeader__fa {
     padding: 5px; }
 
@@ -3252,7 +3251,6 @@ p.menu-label {
 
 .columInfoProduct {
   padding: 40px;
-  line-height: 50px;
   background-color: #EEEEEE; }
   @media only screen and (max-width: 767px) {
     .columInfoProduct {
@@ -3272,6 +3270,8 @@ p.menu-label {
     color: #000;
     text-align: left;
     font-size: 1.5em; }
+  .columInfoProduct__fa {
+    padding-right: 5px; }
 
 .ColuminfoProductoFicha__QuitarPadding {
   padding-left: 0px;

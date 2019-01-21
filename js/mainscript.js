@@ -454,14 +454,14 @@ window.onload = function() {
 $(document).ready(function() {
 	menuHamburguesa();
 	menuFiltro();
-	carrusel();
-	carrusel_interna();
-	carrusel_destacados();
 	LeerMasUbicacion();
-	HeaderFiltro();
+	//HeaderFiltro();
 	LeerMasModelo();
 	Modal();
 	ModalMobile();
+	carrusel();
+	carrusel_interna();
+	carrusel_destacados();
 });
 
 
@@ -481,15 +481,13 @@ function menuFiltro() {
 	})
 }
 
-function HeaderFiltro(){
-
+/* function HeaderFiltro(){
 	let dropdown = document.querySelector('.dropdown');
-dropdown.addEventListener('click', function(event) {
-    event.stopPropagation();
-    dropdown.classList.toggle('is-active');
-});
-
-}
+		dropdown.addEventListener('click', function(event) {
+			event.stopPropagation();
+			dropdown.classList.toggle('is-active');
+		});
+} */
 
 
 function removeLoading() {
@@ -541,7 +539,7 @@ function carrusel_destacados(){
 	$('#carousel-destacados').owlCarousel({
 		loop:true,
 		margin:10,
-		nav:true,
+		//nav:true,
 		responsive:{
 			0:{
 				items:1

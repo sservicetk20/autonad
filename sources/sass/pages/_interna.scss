@@ -51,7 +51,7 @@
     //z-index: 999;
     //position: fixed;
     padding: 40px;
-    line-height: 50px;
+    //line-height: 50px;
     //position: -webkit-sticky;
     //position: -webkit;
     @media #{$media-movil}{
@@ -72,6 +72,9 @@
 	        color:$negro;
             text-align:left;
             font-size: 1.5em;
+        }
+        &__fa{
+            padding-right: 5px;
         }
 }
 
