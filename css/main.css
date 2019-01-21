@@ -2411,6 +2411,9 @@ body.loading .loader-wrap {
 .owl-nav .owl-next {
   right: -30px; }
 
+.owl-dots {
+  display: none; }
+
 .containerRecetas__receta {
   height: 310px;
   display: -moz-flex;
@@ -2774,6 +2777,11 @@ form input[type='email'] {
   -ms-flex-align: center;
   -moz-align-items: center;
   align-items: center; }
+  .singleHeader a {
+    color: #000; }
+  .singleHeader a:hover {
+    color: #ffffff;
+    background-color: #3faaec; }
   @media only screen and (max-width: 767px) {
     .singleHeader {
       height: auto;
@@ -2814,7 +2822,10 @@ form input[type='email'] {
         width: 100%;
         display: none; }
         .singleHeader__links.active, .singleHeader__redes.active {
-          display: block; } }
+          display: -ms-grid;
+          display: grid; } }
+  .singleHeader__fa {
+    padding: 5px; }
 
 .singlefiltro {
   background-color: #ffffff;
@@ -3017,12 +3028,18 @@ form input[type='email'] {
   .mainFooter__links {
     padding-left: 20px;
     border-left: 1px solid #ffffff; }
+    @media only screen and (max-width: 480px) {
+      .mainFooter__links {
+        border-left-width: 0px;
+        text-align: center; } }
+    @media only screen and (max-width: 767px) {
+      .mainFooter__links {
+        border-left-width: 0px;
+        text-align: center; } }
     @media only screen and (max-width: 991px) {
       .mainFooter__links {
-        border-left-width: 0; } }
-    @media only screen and (max-width: 991px) {
-      .mainFooter__links {
-        border-left-width: 2px; } }
+        border-left-width: 0px;
+        text-align: center; } }
     .mainFooter__links a {
       display: block;
       margin-bottom: 10px;
@@ -3082,7 +3099,15 @@ form input[type='email'] {
   .containerBanner__DivText {
     padding: 30px; }
   .containerBanner--DivTextouno {
-    text-align: left; }
+    background-repeat: no-repeat;
+    width: auto;
+    /*or your image's width*/
+    height: auto;
+    /*or your image's height*/
+    margin: 0;
+    padding: 0px 0px 0px 50px;
+    text-align: left;
+    font-size: 25px; }
   .containerBanner--DivTextodos {
     background-image: url("../img/sale.png");
     background-repeat: no-repeat;
@@ -3092,7 +3117,8 @@ form input[type='email'] {
     /*or your image's height*/
     margin: 0;
     padding: 0px 0px 0px 50px;
-    text-align: left; }
+    text-align: left;
+    font-size: 25px; }
   .containerBanner--textDivuno {
     font-weight: 900;
     font-size: 1.2em;
@@ -3113,11 +3139,31 @@ form input[type='email'] {
     -moz-align-items: center;
     align-items: center;
     text-align: center;
-    padding: 5px;
+    padding: 35px;
     background-color: #1a4b8a; }
   .containerBanner__QuitarPadding {
     padding-left: 0px;
     padding-right: 0px; }
+
+.dropdown-menu {
+  width: 100vw;
+  position: absolute;
+  left: 0; }
+
+.dropdown.is-fullwidth {
+  display: -ms-flexbox;
+  display: flex; }
+  .dropdown.is-fullwidth .dropdown-trigger,
+  .dropdown.is-fullwidth .dropdown-menu {
+    width: 100%; }
+
+@media only screen and (max-width: 480px) {
+  .filtro {
+    display: none; } }
+
+@media only screen and (max-width: 767px) {
+  .filtro {
+    display: none; } }
 
 .ColumnProductHome {
   padding: 50px;
@@ -3149,6 +3195,12 @@ form input[type='email'] {
   .ColumnProductHome__MenuRelevantes {
     padding-top: 10px;
     padding-bottom: 10px; }
+  @media only screen and (max-width: 480px) {
+    .ColumnProductHome--filtro {
+      display: none; } }
+  @media only screen and (max-width: 767px) {
+    .ColumnProductHome--filtro {
+      display: none; } }
 
 .imgpublicidad {
   text-align: center; }
@@ -3166,6 +3218,9 @@ form input[type='email'] {
 .vermas_abrir_modelo {
   display: -ms-grid;
   display: grid; }
+
+p.menu-label {
+  font-size: 1em; }
 
 .ColumProduct {
   padding: 5px;

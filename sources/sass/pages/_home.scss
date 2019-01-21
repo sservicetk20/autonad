@@ -17,7 +17,14 @@
 		padding: 30px;
 	}
 	&--DivTextouno{
+		//background-image: url("../img/sale.png");
+		background-repeat: no-repeat;
+		width: auto; /*or your image's width*/
+		height: auto; /*or your image's height*/
+		margin: 0;
+		padding: 0px 0px 0px 50px;
 		text-align: left;
+		font-size: 25px;
 	}
 	&--DivTextodos{
 		background-image: url("../img/sale.png");
@@ -27,6 +34,7 @@
 		margin: 0;
 		padding: 0px 0px 0px 50px;
 		text-align: left;
+		font-size: 25px;
 	}
 	&--textDivuno{
 		font-weight: 900;
@@ -44,7 +52,7 @@
 		@include justify-content(space-around);
 		@include align-items(center);
 		text-align: center;
-		padding: 5px;
+		padding: 35px;
 		background-color: $ColorPublicidadHome;
 	}
 	&__QuitarPadding {
@@ -53,8 +61,32 @@
 	}
 }
 
+.dropdown-menu{
+	width:100vw;
+	position: absolute;
+	left: 0;
+}
+
+.dropdown.is-fullwidth {
+	display: flex;
+  
+	.dropdown-trigger,
+	.dropdown-menu {
+	  width: 100%;
+	}
+  }
 
 
+.filtro{
+	@media #{$media-extra-movil}{
+		display: none;
+		
+	}
+	@media #{$media-movil}{
+		display: none;
+		
+	}
+}
 
 
 .ColumnProductHome{	
@@ -102,6 +134,16 @@
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
+	&--filtro{
+		@media #{$media-extra-movil}{
+			display: none;
+			
+		}
+		@media #{$media-movil}{
+			display: none;
+			
+		}
+	}
 }
 
 .imgpublicidad{
@@ -122,4 +164,8 @@
 
 .vermas_abrir_modelo{
 	display: grid;
+}
+
+p.menu-label {
+	font-size: 1em;
 }

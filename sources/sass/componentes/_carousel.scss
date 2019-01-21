@@ -178,6 +178,7 @@
   z-index: 1;
   height: 100%;
   width: 100%; }
+
   .carousel-wrap {
     margin: 90px auto;
     padding: 0 5%;
@@ -211,3 +212,7 @@
   .owl-nav .owl-next {
     right: -30px;
   }
+
+  .owl-dots {
+    display: none;
+}

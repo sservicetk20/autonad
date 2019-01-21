@@ -24,47 +24,102 @@
 
 <div class="landingContainer"> <!-- DIV INICIAL PARA LOADING ↓_↓_↓_↓_↓-->
 
-    <!-- REDES SOCIALES ↓_↓_↓_↓_↓ REDES SOCIALES --> <!--  REDES SOCIALES ↓_↓_↓_↓_↓ REDES SOCIALES -->
-    <div class="singleHeader__redes">
-            <a href="http://localhost:8888/Proyectos/Autonad/" target="_blank" class="btn">
-                <i class="fab fa-facebook-f"></i>
+<!-- MENU ↓_↓_↓_↓_↓ MENU --> <!--  MENU ↓_↓_↓_↓_↓ MENU -->   
+<header class="singleHeader">
+        <div class="singleHeader__logo">
+            <a href="">
+                <img src="img/logo.png" alt="AUTONAD">
             </a>
-            <a href="http://localhost:8888/Proyectos/Autonad/" target="_blank" class="btn">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="http://localhost:8888/Proyectos/Autonad/" target="_blank" class="btn">
-                <i class="fab fa-twitter"></i>
-            </a>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+            </div>
         </div>
+        
+        <!--informacion menu hamburguesa -->
+        <div class="singleHeader__links">
+            <a href="" class="btn btn____transparente">
+                    <i class="singleHeader__fa fa fa-map-marker-alt"></i> Calle 128
+            </a>
+            <a href="" class="btn btn____transparente">
+                    <i class="singleHeader__fa fa fa-map-marker-alt"></i>Avenida Boyacá
+             </a>
+             <a href="" class="btn btn____transparente">
+                    <i class="singleHeader__fa fa fa-map-marker-alt"></i>Chia Sandamanoy
+             </a>
+        </div>
+</header>
 
-     <!-- MENU ↓_↓_↓_↓_↓ MENU --> <!--  MENU ↓_↓_↓_↓_↓ MENU -->   
-    <header class="singleHeader">
-            <div class="singleHeader__logo">
-                <a href="">
-                    <img src="img/logo.png" alt="AUTONAD">
-                </a>
-                <div class="hamburger-menu">
-                    <div class="bar"></div>
-                </div>
+<!-- MENU FILTRO↓_↓_↓_↓_↓ MENU FILTRO--> <!--  MENU FILTRO↓_↓_↓_↓_↓ MENU FILTRO-->   
+<header class="singlefiltro hidden-lg hidden-md hidden-sm">
+    <div class="singlefiltro__logo">
+        <div class="hamburger-filtro">
+            <div class="bar-filtro"></div>
+        </div>
+    </div>
+    
+    <!--informacion menu hamburguesa filtro-->
+    <div class="singlefiltro__links">
+        <!-- FILTRO ↓_↓_↓_↓_↓ FILTRO --> <!--  FILTRO ↓_↓_↓_↓_↓ FILTRO -->
+        <div class="ColumFiltroMobile">
+            <div class="ColumFiltroMobile__filtro">
+                <form>
+                    <div class="ColumFiltroMobile--selectMobile select">
+                        <select>
+                            <option>Todas las marcas</option>
+                            <option>uno</option>
+                        </select>
+                    </div>
+    
+                    <div class="ColumFiltroMobile--selectMobile select">
+                        <select>
+                            <option>Todos los modelos</option>
+                            <option>With options</option>
+                        </select>
+                    </div>
+    
+                    <div class="ColumFiltroMobile--selectMobile select">
+                        <select>
+                            <option>Precio desde</option>
+                            <option>With options</option>
+                        </select>
+                    </div>
+    
+                    <div class="ColumFiltroMobile--selectMobile select">
+                        <select>
+                        <option>Precio hasta</option>
+                        <option>With options</option>
+                        </select>
+                    </div>
+    
+                    <div class="ColumFiltroMobile--selectMobile select">
+                        <select>
+                        <option>2018</option>
+                        <option>With options</option>
+                        </select>
+                    </div>
+    
+                    <div class="ColumFiltroMobile--selectMobile select">
+                        <select>
+                        <option>2018</option>
+                        <option>With options</option>
+                        </select>
+                    </div>
+
+                    <button class="button is-fullwidth is-success">Buscar</button>
+                </form>
             </div>
-            <div class="singleHeader__links">
-                <a href="" class="btn btn____transparente">
-                    <img src="img/menu1.png" alt="Producto">
-                </a>
-                <a href="" class="btn btn____transparente">
-                    <img src="img/menu2.png" alt="Producto">
-                 </a>
-                 <a href="" class="btn btn____transparente">
-                    <img src="img/menu3.png" alt="Producto">
-                 </a>
-            </div>
-        </header>
+        </div>
+    </div>
+</header>
 
     <!-- SLIDER ↓_↓_↓_↓_↓ SLIDER --> <!--  SLIDER ↓_↓_↓_↓_↓ SLIDER -->
     <!-- <div class="carousel-wrap"> -->
-            <div id="carrusel" class="carrusel owl-carousel">
-                <div class="item" style="width:100%">
-                    <img src="img/layer-min.png" alt="Producto">
+            <div id="carrusel" class="carrusel owl-carousel owl-theme">
+                <div class="item" style="width: 100%;height:100%;">
+                    <img src="http://lorempixel.com/1900/600/transport/6" alt="Producto">
+                </div>
+                <div class="item">
+                    <img src="http://lorempixel.com/1900/600/transport/3" alt="Producto">
                 </div>
             </div>
     <!-- </div> -->
@@ -76,18 +131,18 @@
             <div class="row">
 
                 <div class="containerBanner__banner">
-                    <div class="col-md-8 containerBanner__QuitarPadding">
+                    <div class="col-md-8 col-sm-12 col-xs-12 cocontainerBanner__QuitarPadding">
                         <div class="row containerBanner__DivText">
-                            <div class="containerBanner--DivTextouno col-md-4">Kia Cerato 2014 <br><strong class="containerBanner--textDivuno">15.000km / Automático</strong></div>
-                            <div class="containerBanner--DivTextodos col-md-4">Coutas desde $345.000* <br><strong class="containerBanner--textDivuno">Precio Full Equipo: $40.990.000*</strong></div>
+                            <div class="containerBanner--DivTextouno col-md-4 col-sm-12 col-xs-12">Kia Cerato 2014 <br><strong class="containerBanner--textDivuno">15.000km / Automático</strong></div>
+                            <div class="containerBanner--DivTextodos col-md-4 col-sm-12 col-xs-12">Coutas desde $345.000* <br><strong class="containerBanner--textDivuno">Precio Full Equipo: $40.990.000*</strong></div>
                         </div>
                     </div>
                 </div>
 
                 <div class=containerBanner__imgpublicidad>
-                    <div class="col-md-4 containerBanner__QuitarPadding">
-                            <img src="img/publicidad.png" alt="AUTONAD">
-                            <strong class="containerBanner--textDivuno">Compramos tu usado a domicilio </strong>
+                        <img src="img/publicidad.png" alt="AUTONAD">
+                    <div class="col-md-4 col-sm-6 col-xs-12 containerBanner__QuitarPadding">
+                        <strong class="containerBanner--textDivuno">Compramos tu usado a domicilio </strong>
                     </div>
                 </div>
 
@@ -95,8 +150,38 @@
         </div>
     </div>
 
+    <!--filtro para mobiles y tablets ↓_↓_↓_↓_↓ FILTRO --> <!--  FILTRO ↓_↓_↓_↓_↓ FILTRO-->
+    <!--<div class="ColumnProductHome--FiltroMobile hidden-lg hidden-md">
+        <div class="dropdown is-fullwidth is-active">
+            <div class="dropdown-trigger">
+                <button class="button is-fullwidth is-primary" aria-haspopup="true" aria-controls="dropdown-menu2">
+                <span>Filtro</span>
+                <span class="icon is-small">
+                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+                </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+                <div class="dropdown-content">
+                <div class="dropdown-item">
+                    <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+                </div>
+                <hr class="dropdown-divider">
+                <div class="dropdown-item">
+                    <p>You simply need to use a <code>&lt;div&gt;</code> instead.</p>
+                </div>
+                <hr class="dropdown-divider">
+                <a href="#" class="dropdown-item">
+                    This is a link
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
     <!-- FILTRO ↓_↓_↓_↓_↓ FILTRO --> <!--  FILTRO ↓_↓_↓_↓_↓ FILTRO -->
-    <div class="filtro">
+    <!--<div class="filtro">
 
         <div>
             <strong class="text_white">
@@ -153,25 +238,102 @@
 
             <button class="button is-primary">Buscar</button>
         </form>
+    </div>-->
+
+    <!-- ↓_↓_↓_↓_↓destacados-->
+    <div class="ColumnProductHome">
+            <div class="ColumnProductHome__interno col-md-12">
+                <p class="menu-label">Destacados</p>
+                <!-- SLIDER PRODUCTOS↓_↓_↓_↓_↓ SLIDER --> <!--  SLIDER ↓_↓_↓_↓_↓ SLIDER -->
+                <div id="carousel-destacados" class="carrusel owl-carousel">
+        <div class="item" data-hash="uno" style="width:100%">
+            <div class="card ColumnProductHome__CardProducto">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="http://lorempixel.com/1200/800/transport/3" alt="Producto">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media-content">
+                        <p class="ColumnProductHome__title title is-4"><strong>$46.900.000</strong></p>
+                        <p class="ColumnProductHome__title subtitle is-6">2017 | 12.000 KM</p>
+                    </div>
+                    <div class="ColumnProductHome__title content">
+                        <p class="ColumnProductHome__title">Mazda Mazda 2 Mazda 2 Grabd Tour.</p><br><a href="#">Bogota D.c.</a><br>
+                    </div>
+                </div>
+            </div><!-- cierre del card ↓_↓_↓_↓_↓--> 
+        </div>
+        <div class="item" data-hash="dos" style="width:100%">
+            <div class="card ColumnProductHome__CardProducto">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="http://lorempixel.com/1200/800/transport/3" alt="Producto">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media-content">
+                        <p class="ColumnProductHome__title title is-4"><strong>$46.900.000</strong></p>
+                        <p class="ColumnProductHome__title subtitle is-6">2017 | 12.000 KM</p>
+                    </div>
+                    <div class="ColumnProductHome__title content">
+                        <p class="ColumnProductHome__title">Mazda Mazda 2 Mazda 2 Grabd Tour.</p><br><a href="#">Bogota D.c.</a><br>
+                    </div>
+                </div>
+            </div><!-- cierre del card ↓_↓_↓_↓_↓--> 
+        </div>
+        <div class="item" data-hash="tres" style="width:100%">
+            <div class="card ColumnProductHome__CardProducto">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="http://lorempixel.com/1200/800/transport/4" alt="Producto">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media-content">
+                        <p class="ColumnProductHome__title title is-4"><strong>$46.900.000</strong></p>
+                        <p class="ColumnProductHome__title subtitle is-6">2017 | 12.000 KM</p>
+                    </div>
+                    <div class="ColumnProductHome__title content">
+                        <p class="ColumnProductHome__title">Mazda Mazda 2 Mazda 2 Grabd Tour.</p><br><a href="#">Bogota D.c.</a><br>
+                    </div>
+                </div>
+            </div><!-- cierre del card ↓_↓_↓_↓_↓--> 
+        </div>
+        <div class="item" data-hash="cuatro" style="width:100%">
+            <div class="card ColumnProductHome__CardProducto">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="http://lorempixel.com/1200/800/transport/5" alt="Producto">
+                    </figure>
+                </div>
+                <div class="card-content">
+                    <div class="media-content">
+                        <p class="ColumnProductHome__title title is-4"><strong>$46.900.000</strong></p>
+                        <p class="ColumnProductHome__title subtitle is-6">2017 | 12.000 KM</p>
+                    </div>
+                    <div class="ColumnProductHome__title content">
+                        <p class="ColumnProductHome__title">Mazda Mazda 2 Mazda 2 Grabd Tour.</p><br><a href="#">Bogota D.c.</a><br>
+                    </div>
+                </div>
+            </div><!-- cierre del card ↓_↓_↓_↓_↓--> 
+        </div>
+                </div>
+            </div>  
     </div>
             
 
     <!-- FILTRO POR CATEGORIAS ↓_↓_↓_↓_↓ FILTRO --> <!--  FILTRO ↓_↓_↓_↓_↓ FILTRO -->
-
     <div class="ColumnProductHome">
             <div class="ColumnProductHome__home"><!-- ↓_↓_↓_↓_↓Cierre ColumnProductHome-->
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="ColumnProductHome--filtro col-md-3">
                         <div>
                             <strong>Ordenar publicaciones</strong>
                                 <ul class="menu-list ColumnProductHome__MenuRelevantes">
                                     <strong>Más relevantes</strong>
                                 </ul>
-                        </div>
-
-
-
-                        
+                        </div>                    
                     <div class="ColumnProductLateral">
                         <aside class="menu">
                             <p class="menu-label">Ubicación</p>
@@ -313,89 +475,7 @@
             </div><!-- ↓_↓_↓_↓_↓Cierre ColumnProductHome-->
     </div>
 
-
-    <!-- ↓_↓_↓_↓_↓destacados-->
-    
-    <div class="ColumnProductHome">
-            <div class="ColumnProductHome__interno col-md-12">
-                    <p class="menu-label">Destacados</p>
-                    <div class="row">
-                        <div class="col-md-3 ColumnProductHome__Paddingnormalize">
-                            <div class="card ColumnProductHome__CardProducto">
-                                        <div class="card-image">
-                                            <figure class="image is-4by3">
-                                                <img src="http://lorempixel.com/1280/960/transport/5" alt="Placeholder image">
-                                            </figure>
-                                        </div>
-                                        <div class="card-content">
-                                            <div class="media-content">
-                                                <p class="ColumnProductHome__title title is-4"><strong>$46.900.000</strong></p>
-                                                <p class="ColumnProductHome__title subtitle is-6">2017 | 12.000 KM</p>
-                                            </div>
-                                            <div class="ColumnProductHome__title content">
-                                                <p class="ColumnProductHome__title">Mazda Mazda 2 Mazda 2 Grabd Tour.</p><br><a href="#">Bogota D.c.</a><br>
-                                            </div>
-                                        </div>
-                            </div><!-- cierre del card ↓_↓_↓_↓_↓-->
-                        </div>                          
-                        <div class="col-md-3 ColumnProductHome__Paddingnormalize">
-                            <div class="card ColumnProductHome__CardProducto">
-                                <div class="card-image">
-                                    <figure class="image is-4by3">
-                                        <img src="http://lorempixel.com/1280/960/transport/6" alt="Placeholder image">
-                                    </figure>
-                                </div>
-                                <div class="card-content">
-                                    <div class="media-content">
-                                        <p class="ColumnProductHome__title title is-4"><strong>$46.900.000</strong></p>
-                                        <p class="ColumnProductHome__title subtitle is-6">2017 | 12.000 KM</p>
-                                    </div>
-                                    <div class="ColumnProductHome__title content">
-                                        <p class="ColumnProductHome__title">Mazda Mazda 2 Mazda 2 Grabd Tour.</p><br><a href="#">Bogota D.c.</a>
-                                    </div>
-                                </div>
-                            </div><!-- cierre del card ↓_↓_↓_↓_↓-->
-                        </div>
-                        <div class="col-md-3 ColumnProductHome__Paddingnormalize">
-                            <div class="card ColumnProductHome__CardProducto">
-                                <div class="card-image">
-                                    <figure class="image is-4by3">
-                                        <img src="http://lorempixel.com/1280/960/transport/7" alt="Placeholder image">
-                                    </figure>
-                                </div>
-                                <div class="card-content">
-                                    <div class="media-content">
-                                        <p class="ColumnProductHome__title title is-4"><strong>$46.900.000</strong></p>
-                                        <p class="ColumnProductHome__title subtitle is-6">2017 | 12.000 KM</p>
-                                    </div>
-                                    <div class="ColumnProductHome__title content">
-                                        <p class="ColumnProductHome__title">Mazda Mazda 2 Mazda 2 Grabd Tour.</p><br><a href="#">Bogota D.c.</a>
-                                    </div>
-                                </div>
-                            </div><!-- cierre del card ↓_↓_↓_↓_↓-->
-                        </div>
-                        <div class="col-md-3 ColumnProductHome__Paddingnormalize">
-                            <div class="card ColumnProductHome__CardProducto">
-                                    <div class="card-image">
-                                        <figure class="image is-4by3">
-                                            <img src="http://lorempixel.com/1280/960/transport/8" alt="Placeholder image">
-                                        </figure>
-                                    </div>
-                                    <div class="card-content">
-                                        <div class="media-content">
-                                            <p class="ColumnProductHome__title title is-4"><strong>$46.900.000</strong></p>
-                                            <p class="ColumnProductHome__title subtitle is-6">2017 | 12.000 KM</p>
-                                        </div>
-                                        <div class="ColumnProductHome__title content">
-                                            <p class="ColumnProductHome__title">Mazda Mazda 2 Mazda 2 Grabd Tour.</p><br><a href="#">Bogota D.c.</a>
-                                        </div>
-                                    </div>
-                            </div><!-- cierre del card ↓_↓_↓_↓_↓-->
-                        </div>
-                    </div> <!--↓_↓_↓_↓_↓ cierre del row de la columna productos -->
-            </div>  
-    </div>
-
+ 
 
     <!-- ↓_↓_↓_↓_↓banner home-->
     <div class="row">

@@ -71,11 +71,18 @@
 	&__links{
 		padding-left: 20px;
 		border-left: 1px solid $blanco;
-		@media #{$media-tablet}{
-			border-left-width: 0;
+		@media #{$media-extra-movil}{
+			border-left-width: 0px;
+			text-align: center;
+		}
+		@media #{$media-movil}{
+			//@at-rootborder-left: 0px solid none;
+			border-left-width: 0px;
+			text-align: center;
 		}
 		@media #{$media-tablet}{
-			border-left-width: 2px;
+			border-left-width: 0px;
+			text-align: center;
 		}
 		a{
 			display: block;

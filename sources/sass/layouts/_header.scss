@@ -70,6 +70,13 @@
 	@include flexbox();
 	@include justify-content(space-around);
 	@include align-items(center);
+	a {
+		color: $negro;
+	}
+	a:hover{
+		color: $blanco;
+		background-color: $azul;
+	}
 	@media #{$media-movil}{
 		height: auto;
 		display: block;
@@ -125,9 +132,12 @@
 			//margin-top: 20px;
 			//margin-bottom: 20px;
 			&.active{
-				display: block;
+				display: grid;
 			}
 		}
+	}
+	&__fa{
+		padding: 5px;
 	}
 }
 

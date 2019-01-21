@@ -10,7 +10,9 @@ $(document).ready(function() {
 	menuFiltro();
 	carrusel();
 	carrusel_interna();
+	carrusel_destacados();
 	LeerMasUbicacion();
+	HeaderFiltro();
 	LeerMasModelo();
 	Modal();
 	ModalMobile();
@@ -31,6 +33,16 @@ function menuFiltro() {
 
 		$('.singlefiltro__links').toggleClass('active');
 	})
+}
+
+function HeaderFiltro(){
+
+	let dropdown = document.querySelector('.dropdown');
+dropdown.addEventListener('click', function(event) {
+    event.stopPropagation();
+    dropdown.classList.toggle('is-active');
+});
+
 }
 
 
@@ -55,8 +67,7 @@ function carrusel() {
 	$("#carrusel").owlCarousel({
 		items:1,
     	margin:10,
-		autoHeight:true,
-		nav: true,
+		//nav: true,
 		//navElement: true,
 		navText: [
 			"<i class='fa fa-caret-left'></i>",
@@ -77,6 +88,25 @@ function carrusel_interna(){
 		URLhashListener:true,
 		//autoplayHoverPause:true,
 		//startPosition: 'URLHash'
+	});
+}
+
+function carrusel_destacados(){
+	$('#carousel-destacados').owlCarousel({
+		loop:true,
+		margin:10,
+		nav:true,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:3
+			},
+			1000:{
+				items:5
+			}
+		}
 	});
 }
 
@@ -131,7 +161,6 @@ function LeerMasModelo() {
 	});
 }//LEER MAS
 
-
 function Modal() {
 	$("#showModal").click(function() {
 		$(".modal").addClass("is-active");  
@@ -151,3 +180,4 @@ function ModalMobile() {
 		 $(".modal").removeClass("is-active");
 	  });	
 }
+
