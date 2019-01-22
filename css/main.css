@@ -3092,11 +3092,14 @@ form input[type='email'] {
     display: contents;
     background-color: #3faaec;
     color: #ffffff; }
-    @media only screen and (max-width: 767px) {
-      .containerBanner__banner {
-        display: none; } }
   .containerBanner__DivText {
     padding: 30px; }
+    @media only screen and (max-width: 480px) {
+      .containerBanner__DivText {
+        padding: 0px; } }
+    @media only screen and (max-width: 767px) {
+      .containerBanner__DivText {
+        padding: 0px; } }
   .containerBanner--DivTextouno {
     background-repeat: no-repeat;
     width: auto;
@@ -3106,7 +3109,19 @@ form input[type='email'] {
     margin: 0;
     padding: 0px 0px 0px 50px;
     text-align: left;
-    font-size: 25px; }
+    font-size: 1.3em; }
+    @media only screen and (max-width: 1199px) {
+      .containerBanner--DivTextouno {
+        font-weight: 900;
+        font-size: 1.5em; } }
+    @media only screen and (max-width: 480px) {
+      .containerBanner--DivTextouno {
+        font-weight: 900;
+        font-size: 1em; } }
+    @media only screen and (max-width: 767px) {
+      .containerBanner--DivTextouno {
+        font-weight: 900;
+        font-size: 1em; } }
   .containerBanner--DivTextodos {
     background-image: url("../img/sale.png");
     background-repeat: no-repeat;
@@ -3117,16 +3132,21 @@ form input[type='email'] {
     margin: 0;
     padding: 0px 0px 0px 50px;
     text-align: left;
-    font-size: 25px; }
+    font-size: 1.3em; }
+    @media only screen and (max-width: 480px) {
+      .containerBanner--DivTextodos {
+        font-weight: 900;
+        font-size: 1em; } }
+    @media only screen and (max-width: 767px) {
+      .containerBanner--DivTextodos {
+        font-weight: 900;
+        font-size: 1em; } }
   .containerBanner--textDivuno {
     font-weight: 900;
     font-size: 1.2em;
     color: #ffffff; }
   .containerBanner__publicidadHome {
     color: #ffffff; }
-    @media only screen and (max-width: 767px) {
-      .containerBanner__publicidadHome {
-        display: none; } }
   .containerBanner__imgpublicidad {
     display: -moz-flex;
     display: -ms-flexbox;
@@ -3140,9 +3160,28 @@ form input[type='email'] {
     text-align: center;
     padding: 35px;
     background-color: #1a4b8a; }
+    @media only screen and (max-width: 480px) {
+      .containerBanner__imgpublicidad {
+        padding: 5px; } }
+    @media only screen and (max-width: 767px) {
+      .containerBanner__imgpublicidad {
+        padding: 5px; } }
   .containerBanner__QuitarPadding {
     padding-left: 0px;
     padding-right: 0px; }
+
+.link_campaña {
+  width: 100%;
+  color: #ffffff;
+  background: #3c3c3a; }
+
+.link_campaña:after {
+  width: 100%;
+  color: #ffffff;
+  background: #3c3c3a; }
+
+.link_campaña a {
+  color: #ffffff; }
 
 .dropdown-menu {
   width: 100vw;
@@ -3167,6 +3206,12 @@ form input[type='email'] {
 .ColumnProductHome {
   padding: 50px;
   background-color: #EEEEEE; }
+  @media only screen and (max-width: 480px) {
+    .ColumnProductHome {
+      padding: 0px; } }
+  @media only screen and (max-width: 767px) {
+    .ColumnProductHome {
+      padding: 0px; } }
   .ColumnProductHome__home {
     background-color: #EEEEEE;
     padding: 5px; }

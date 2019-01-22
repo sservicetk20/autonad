@@ -9,12 +9,17 @@
 		background-color: $azul;
 		color:$blanco;
 		@media #{$media-movil}{
-			display: none;
-			
+			//display: none;
 		}
 	}
 	&__DivText{
 		padding: 30px;
+		@media #{$media-extra-movil}{
+		 padding: 0px;
+		}
+		@media #{$media-movil}{
+		 padding: 0px;
+		}
 	}
 	&--DivTextouno{
 		//background-image: url("../img/sale.png");
@@ -24,7 +29,20 @@
 		margin: 0;
 		padding: 0px 0px 0px 50px;
 		text-align: left;
-		font-size: 25px;
+		font-size: 1.3em;
+		
+			@media #{$media-desktop}{
+				font-weight: 900;
+				font-size: 1.5em;
+			}
+			@media #{$media-extra-movil}{
+				font-weight: 900;
+				font-size: 1em;
+			}
+			@media #{$media-movil}{
+				font-weight: 900;
+				font-size: 1em;
+			}
 	}
 	&--DivTextodos{
 		background-image: url("../img/sale.png");
@@ -34,17 +52,26 @@
 		margin: 0;
 		padding: 0px 0px 0px 50px;
 		text-align: left;
-		font-size: 25px;
+		font-size: 1.3em;
+			@media #{$media-extra-movil}{
+				font-weight: 900;
+				font-size: 1em;
+			}
+			@media #{$media-movil}{
+				font-weight: 900;
+				font-size: 1em;
+			}
 	}
 	&--textDivuno{
 		font-weight: 900;
     	font-size: 1.2em;
 		color: $blanco;
+
 	}
 	&__publicidadHome{
 		color:$blanco;
 		@media #{$media-movil}{
-			display: none;
+			
 		}
 	}
 	&__imgpublicidad{
@@ -54,11 +81,35 @@
 		text-align: center;
 		padding: 35px;
 		background-color: $ColorPublicidadHome;
+		@media #{$media-extra-movil}{
+			padding: 5px;
+		}
+		@media #{$media-movil}{
+			padding: 5px;
+		}
 	}
 	&__QuitarPadding {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
+}
+
+//slider
+.link_campaña {
+    //padding: 5px;
+    width: 100%;
+	color: $blanco;
+	background: rgb(60,60,58);
+}
+.link_campaña:after {
+    //padding: 5px;
+    width: 100%;
+	color: $blanco;
+	background: rgb(60,60,58);
+}
+
+.link_campaña a {
+   color: $blanco;
 }
 
 .dropdown-menu{
@@ -90,9 +141,15 @@
 
 
 .ColumnProductHome{	
-		padding: 50px;
-		background-color: $fondo;
+	padding: 50px;
+	background-color: $fondo;
 		//border: 1px solid red;
+	@media #{$media-extra-movil}{
+		padding: 0px;
+	}
+	@media #{$media-movil}{
+		padding: 0px;		
+	}
 	&__home{
 		background-color: $fondo;
 		padding: 5px;
