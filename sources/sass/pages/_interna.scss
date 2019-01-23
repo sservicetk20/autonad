@@ -89,6 +89,9 @@
     }
     &--tituloFicha{
         padding: 15px;
+        @media #{$media-extra-movil}{
+            padding: 0.3em;
+        }
     }
 }
 

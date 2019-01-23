@@ -3170,15 +3170,24 @@ form input[type='email'] {
     padding-left: 0px;
     padding-right: 0px; }
 
-.link_campaña {
-  width: 100%;
-  color: #ffffff;
-  background: #3c3c3a; }
+#carrusel .item-details {
+  background-color: #333333;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: left; }
+  #carrusel .item-details h5 {
+    margin: 0 0 15px;
+    font-size: 18px;
+    line-height: 18px; }
+    #carrusel .item-details h5 span {
+      color: red;
+      float: right;
+      padding-right: 20px; }
+  #carrusel .item-details p {
+    font-size: 14px; }
 
-.link_campaña:after {
-  width: 100%;
-  color: #ffffff;
-  background: #3c3c3a; }
+#carrusel .item {
+  text-align: center; }
 
 .link_campaña a {
   color: #ffffff; }
@@ -3325,6 +3334,9 @@ p.menu-label {
 
 .ColuminfoProductoFicha--tituloFicha {
   padding: 15px; }
+  @media only screen and (max-width: 480px) {
+    .ColuminfoProductoFicha--tituloFicha {
+      padding: 0.3em; } }
 
 aside.fichatecnica {
   padding: 5px; }
